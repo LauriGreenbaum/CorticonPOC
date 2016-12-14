@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_V1o6sHP9EeaTXMQlbHNaDA" externalChecksum="1229514692:201531363">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_i8NIUnP9EeaTXMQlbHNaDA" externalChecksum="1229514692:201531363">
+    <testsheet ruleActivityUpdateStamp="_hYpJYG9TEeaevqmegATM5w" ruleActivity="../Ruleflows/Basic%20Month%20Tariff%20Calculation%20Flow.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="The Risk Tariff Multiplier is equal to 30.768700 for a Vehicle Usage Type 23 Person Region, 784 and Vehicle with 183 KW."/>
+        <PostedMessage severity="Info" text="Person Age Multiplier is 0.900000, for Person Birth Date 07/07/1975 and Corporate false."/>
+        <PostedMessage severity="Info" text="Car Age Multiplier is 0.940000, for a Vehicle Usage Type 23, for Vehicle Construction year 2013."/>
+        <PostedMessage severity="Info" text="Car Make Model Multiplicator for Private client is 0.930000, using Vehicle Type Code 5438000004."/>
+        <PostedMessage severity="Info" text="Person Type Multiplier is 0.900000, for Person is Corporate = false."/>
+        <PostedMessage severity="Info" text="Sales Agreement Multiplier is 1.000000, for Agreement Number 562."/>
+        <PostedMessage severity="Info" text="Owner Reg Nr Multiplier is 1.000000, for Vehicle Owner 11315936."/>
+        <PostedMessage severity="Info" text="Fuel Multiplier is 1.100000, for Vehicle Fuel Type BEH."/>
+        <PostedMessage severity="Info" text="Customer Segment Multiplier is 1.000000, for Person Segment EL4."/>
+        <PostedMessage severity="Info" text="Private Pair modifier is 0.660000, for Claim Count 0 and Policy Years 3.000000"/>
+        <PostedMessage severity="Info" text="Private Person Multiplier is 0.960200, for Claim Count 2 and Policy Years (16.570000-3.000000)"/>
+        <PostedMessage severity="Info" text="Private Person Time Multiplier for Input C: Policy Years 16.570000 is larger than 15, can not find from table"/>
+        <PostedMessage severity="Info" text="Private Person Time Multiplier for Input C: Person Multiplier is 1.161738, for Claim Count 2 and Policy Years 16.570000"/>
+        <PostedMessage severity="Info" text="Private Person Time Multiplier for Input B is1.161738, chosen as max between 1.161738 ad 0,6"/>
+        <PostedMessage severity="Info" text="Reducing Claim Count for Time Calculation B, new Claim count 1"/>
+        <PostedMessage severity="Info" text="Private Person Time Multiplier for Input B: Policy Years 16.570000 is larger than 15, can not find from table"/>
+        <PostedMessage severity="Info" text="Private Person Time Multiplier for Input B: Person Multiplier is 0.697043, for Claim Count 1 and Policy Years 16.570000"/>
+        <PostedMessage severity="Info" text="Time Coeficient is 0.600000, for Time Coeficient C 0.697043 / Time Coeficient B 1.161738"/>
+        <PostedMessage severity="Info" text="Time Coeficient is 0.900000, used &quot;1-(1-ratio)/4&quot; for calculation, since Last Claim Date is less than 10 years ago"/>
+        <PostedMessage severity="Info" text="Time Coeficient is 0.950000, chosen as maximum value, compared to 0,95"/>
+        <PostedMessage severity="Info" text="Foreign Multiplier is 1.000000, for Foreign Claim Count null and Last Foreign Claim Date null"/>
+        <PostedMessage severity="Info" text="Bonus Malus is 0.602045, it is calculated with Foreign Coeficient, because of Private Person&#xD;&#xA;(0.660000*0.960200*0.950000*1.000000 )"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" expanded="false" eClass="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="07/23/2016" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="L1" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementMTPLCoverClass"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="562" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementSalesAgreementNo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="05/13/2016" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementStart"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/aRiskTariffMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/BMMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/carAgeMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/carMakeModelMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/customerSegmentMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/fuelMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/inputDataErrorMessage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/InputDataOK"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MTPLAgreementMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplFinalCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplForeginCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplPairCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplPersonCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef_0"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef_1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/ownerRegNrMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personAgeMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="07/07/1975" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personBirthDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="37507074920" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personIsCorporation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="784" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personRegion"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="EL4" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personSegment"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personTypeMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/resultBM"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/resultPrice"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/resultTariffPrice"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/salesAgreementMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/tariffRenewedPrice"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="UNIVERSAAL" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vechicleBody"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="BEH" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vechicleFuel"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="11315936" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vechicleOwner"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5438000004" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vechicleTypkod"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="99" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleColor"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2013" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleConstYear"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="X8130103570" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2700" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleKG"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="183" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleKW"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="214MHZ" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleRegNo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleSeats"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="23" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleUsageType"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="JTJBC11A602057897" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleVIN"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="344.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/AverageClaimSum"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/ClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="04/14/2016 02:30:29" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/Created"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/ForeignClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="11/07/2007" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/LastClaimDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/LastForeignClaimDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="37507074920" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/personID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="16.570000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/PolicyYears"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" expanded="false" eClass="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/ClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="04/14/2016 02:30:30" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/Created"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/ForeignClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/LastClaimDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/LastForeignClaimDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="37507074920" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/personID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/PolicyYears"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="X8130103570" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/vehicleID"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" expanded="false" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.7 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.9 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.10 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.11 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.12 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.13 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.14 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.15 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.16 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.17 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.18 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.19 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.20 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.21" eClass="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="07/23/2016" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="L1" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementMTPLCoverClass"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="562" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementSalesAgreementNo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="05/13/2016" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementStart"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="30.768700" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/aRiskTariffMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.600000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/BMMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.940000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/carAgeMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.930000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/carMakeModelMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/customerSegmentMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.100000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/fuelMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/inputDataErrorMessage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/InputDataOK"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MTPLAgreementMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.602045" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplFinalCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplForeginCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.660000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplPairCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.960200" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplPersonCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.950000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.697043" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef_0"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.161738" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef_1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/ownerRegNrMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.900000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personAgeMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="07/07/1975" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personBirthDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="37507074920" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="false" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personIsCorporation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="784" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personRegion"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="EL4" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personSegment"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.900000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personTypeMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="60" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/resultBM"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="14.379669" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/resultPrice"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="14.379669" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/resultTariffPrice"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/salesAgreementMultiplier"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/tariffRenewedPrice"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="UNIVERSAAL" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vechicleBody"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="BEH" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vechicleFuel"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="11315936" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vechicleOwner"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5438000004" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vechicleTypkod"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="99" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleColor"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2013" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleConstYear"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="X8130103570" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2700" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleKG"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="183" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleKW"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="214MHZ" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleRegNo"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleSeats"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="23" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleUsageType"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="JTJBC11A602057897" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleVIN"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="344.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/AverageClaimSum"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/ClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="04/14/2016 02:30:29" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/Created"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/ForeignClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="11/07/2007" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/LastClaimDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/LastForeignClaimDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="37507074920" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/personID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="16.570000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/PolicyYears"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" expanded="false" eClass="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/ClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="04/14/2016 02:30:30" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/Created"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/ForeignClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/LastClaimDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/LastForeignClaimDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="37507074920" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/personID"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/PolicyYears"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="X8130103570" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/vehicleID"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.11" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.12" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.13" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.14" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.15" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.16" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.17" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.18" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.19" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.20" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.21" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_94gV4W9LEea11LcoQ3Ikcg" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="../../Vocabularies/SeesamPOC.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="untitled_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

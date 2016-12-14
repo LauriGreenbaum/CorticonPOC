@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_pFiPYSA9Eeaw3-Vj9aRinA" externalChecksum="1229514692:201531363:1972018159" rulesheetAssets="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Bus.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Moped.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Motorcycle.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Passenger%20Car%20Lease.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Passenger%20Car%20non%20Lease%20non%20Taxi.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Passenger%20Car%20Taxi.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Small%20Truck.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Tractor.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Trailer%20Dangerous.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Trailer%20Non%20Dangerous.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Tram.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Trolleybus.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Truck%20Dangerous%20Cargo.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Truck%20Non%20Dangerous%20Cargo.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Truck%20Tractor%20Dangerous.ers#/ ../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Truck%20Tractor%20Non%20Dangerous.ers#/">
+  <ruleflow majorVersion="1" vocabularyUpdateStamp="_IZNXsB6_EeaDvNImPejkDg" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:BranchContainer" name="Retrieve A-Risk Premiums" order="1" ruleActivityUpdateStamp="_pFd98CA9Eeaw3-Vj9aRinA" invokes="#//@ruleflow/@flowControlList.0">
+      <condition expression="ttGeneralMtplBrms.vehicleUsageType">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ttGeneralMtplBrms.vehicleUsageType" datatype="Integer" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="vehicleUsageType" datatype="Integer" termtype="ATTRIBUTE" fulltext="ttGeneralMtplBrms.vehicleUsageType">
+              <parentTerm text="ttGeneralMtplBrms" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="ttGeneralMtplBrms"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </condition>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Passenger Car Lease" ruleActivityUpdateStamp="_Bs7t0CA8EeaaDoRdhTwFVQ" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Passenger%20Car%20Lease.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#PassengerCarLease"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#PassengerCarLease"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Passenger Car Taxi" ruleActivityUpdateStamp="_D6JzUCA8EeaaDoRdhTwFVQ" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Passenger%20Car%20Taxi.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#PassengerCarTaxi"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#PassengerCarTaxi"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Truck Non Dangerous Cargo" ruleActivityUpdateStamp="_6Ew01CA2Eea7rfIpZvPQxw" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Truck%20Non%20Dangerous%20Cargo.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#TruckNonDangerousCargo"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#TruckNonDangerousCargo"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Truck Tractor Dangerous" ruleActivityUpdateStamp="_8E12MiA2Eea7rfIpZvPQxw" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Truck%20Tractor%20Dangerous.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#TruckTractorDangerous"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#TruckTractorDangerous"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Trolleybus" ruleActivityUpdateStamp="_Oyk48CA9Eeaw3-Vj9aRinA" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Trolleybus.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#TrolleyBus"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#TrolleyBus"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Passenger Car non Lease non Taxi" ruleActivityUpdateStamp="_5jeFpCA2Eea7rfIpZvPQxw" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Passenger%20Car%20non%20Lease%20non%20Taxi.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#PassengerCarNonLeaseNonTaxi"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#PassengerCarNonLeaseNonTaxi"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Truck Dangerous Cargo" ruleActivityUpdateStamp="_7ZfMFCA2Eea7rfIpZvPQxw" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Truck%20Dangerous%20Cargo.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#TruckDangerousCargo"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#TruckDangerousCargo"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Tram" ruleActivityUpdateStamp="_9f9wYiA2Eea7rfIpZvPQxw" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Tram.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#Tram"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#Tram"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Trailer Dangerous" ruleActivityUpdateStamp="_620j7yA2Eea7rfIpZvPQxw" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Trailer%20Dangerous.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#TrailerDangerous"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#TrailerDangerous"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Tractor" ruleActivityUpdateStamp="_IQ0RkCA8EeaaDoRdhTwFVQ" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Tractor.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#Tractor"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#Tractor"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Moped" ruleActivityUpdateStamp="_6b0C-CA2Eea7rfIpZvPQxw" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Moped.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#Moped"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#Moped"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Small Truck" ruleActivityUpdateStamp="_F6rgoCA8EeaaDoRdhTwFVQ" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Small%20Truck.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#SmallTruck"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#SmallTruck"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Motorcycle" ruleActivityUpdateStamp="_AGhJoCA8EeaaDoRdhTwFVQ" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Motorcycle.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#Motorcycle"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#Motorcycle"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Trailer Non Dangerous" ruleActivityUpdateStamp="_K9q5YCA8EeaaDoRdhTwFVQ" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Trailer%20Non%20Dangerous.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#TraileNonDangerous"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#TraileNonDangerous"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Truck Tractor Non Dangerous" ruleActivityUpdateStamp="_5KEuNCA2Eea7rfIpZvPQxw" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Truck%20Tractor%20Non%20Dangerous.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#TruckTractorNonDangerous"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#TruckTractorNonDangerous"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium for Bus" ruleActivityUpdateStamp="_-xsEsiA7EeaaDoRdhTwFVQ" invokes="../Rulesheets/Retrieve%20A-Risk%20Premiums/Retrieve%20A-Risk%20Premium%20for%20Bus.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#Bus"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#Bus"/>
+      </branches>
+    </flowControlList>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:BranchContainerShape" x="216" y="18" width="619" height="673" activityNode="#//@ruleflow/@flowControlList.0" valid="true" branchContainer="#//@ruleflow/@flowControlList.0">
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="6" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.15" activityNode="#//@ruleflow/@flowControlList.0/@branches.15/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="48" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.10" activityNode="#//@ruleflow/@flowControlList.0/@branches.10/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="90" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.12" activityNode="#//@ruleflow/@flowControlList.0/@branches.12/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="132" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0/@branches.0/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="176" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.5" activityNode="#//@ruleflow/@flowControlList.0/@branches.5/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="218" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.1" activityNode="#//@ruleflow/@flowControlList.0/@branches.1/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="260" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.11" activityNode="#//@ruleflow/@flowControlList.0/@branches.11/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="302" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.9" activityNode="#//@ruleflow/@flowControlList.0/@branches.9/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="344" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.8" activityNode="#//@ruleflow/@flowControlList.0/@branches.8/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="390" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.13" activityNode="#//@ruleflow/@flowControlList.0/@branches.13/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="604" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.7" activityNode="#//@ruleflow/@flowControlList.0/@branches.7/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="518" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.4" activityNode="#//@ruleflow/@flowControlList.0/@branches.4/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="560" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.6" activityNode="#//@ruleflow/@flowControlList.0/@branches.6/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="476" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.2" activityNode="#//@ruleflow/@flowControlList.0/@branches.2/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="434" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.3" activityNode="#//@ruleflow/@flowControlList.0/@branches.3/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="7" y="648" width="409" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.14" activityNode="#//@ruleflow/@flowControlList.0/@branches.14/@nextStep.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.3" branch="#//@ruleflow/@flowControlList.0/@branches.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.5" branch="#//@ruleflow/@flowControlList.0/@branches.1"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.13" branch="#//@ruleflow/@flowControlList.0/@branches.2"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.14" branch="#//@ruleflow/@flowControlList.0/@branches.3"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.11" branch="#//@ruleflow/@flowControlList.0/@branches.4"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.4" branch="#//@ruleflow/@flowControlList.0/@branches.5"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.12" branch="#//@ruleflow/@flowControlList.0/@branches.6"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.10" branch="#//@ruleflow/@flowControlList.0/@branches.7"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.8" branch="#//@ruleflow/@flowControlList.0/@branches.8"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.7" branch="#//@ruleflow/@flowControlList.0/@branches.9"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.1" branch="#//@ruleflow/@flowControlList.0/@branches.10"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.6" branch="#//@ruleflow/@flowControlList.0/@branches.11"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.2" branch="#//@ruleflow/@flowControlList.0/@branches.12"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.9" branch="#//@ruleflow/@flowControlList.0/@branches.13"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.15" branch="#//@ruleflow/@flowControlList.0/@branches.14"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.0" branch="#//@ruleflow/@flowControlList.0/@branches.15"/>
+    </flowShapeList>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>

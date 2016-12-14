@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_yqBhgHP8EeaTXMQlbHNaDA" externalChecksum="1229514692:201531363">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_d70qMWniEeatnt39Ipybfw" externalChecksum="1229514692:201531363">
+    <testsheet ruleActivityUpdateStamp="_g3xAYCZWEeaSqogwHP_gAw" ruleActivity="../Ruleflows/Calculate%20Person-Vehicle%20Pair%20Multiplier.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Private Pair modifier is 0.660000, for Claim Count 0 and Policy Years 3.000000"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/ClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/PolicyYears"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/vehicleID"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personIsCorporation"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/ClaimCount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3.000000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/PolicyYears"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPair/vehicleID"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="false" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personIsCorporation"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_94gV4W9LEea11LcoQ3Ikcg" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="../../Vocabularies/SeesamPOC.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="untitled_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

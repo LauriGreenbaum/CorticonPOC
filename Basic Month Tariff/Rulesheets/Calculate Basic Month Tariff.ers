@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_IdpfkGltEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <rule>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.resultTariffPrice = General.aRiskTariffMultiplier*&#xD;&#xA;General.BMMultiplier*&#xD;&#xA;General.carAgeMultiplier*&#xD;&#xA;General.carMakeModelMultiplier*&#xD;&#xA;General.customerSegmentMultiplier*&#xD;&#xA;General.fuelMultiplier*&#xD;&#xA;General.MTPLAgreementMultiplier*&#xD;&#xA;General.ownerRegNrMultiplier*&#xD;&#xA;General.personAgeMultiplier*&#xD;&#xA;General.personTypeMultiplier*&#xD;&#xA;General.salesAgreementMultiplier">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.resultTariffPrice = General.aRiskTariffMultiplier * General.BMMultiplier * General.carAgeMultiplier * General.carMakeModelMultiplier * General.customerSegmentMultiplier * General.fuelMultiplier * General.MTPLAgreementMultiplier * General.ownerRegNrMultiplier * General.personAgeMultiplier * General.personTypeMultiplier * General.salesAgreementMultiplier" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="resultTariffPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.resultTariffPrice">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="BMMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.BMMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="carMakeModelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.carMakeModelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="carAgeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.carAgeMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ownerRegNrMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.ownerRegNrMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="salesAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.salesAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="personAgeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.personAgeMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="personTypeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.personTypeMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="General.personID = General.personID">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personID = General.personID" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="personID" datatype="String" termtype="ATTRIBUTE" fulltext="General.personID">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="personID" datatype="String" termtype="ATTRIBUTE" fulltext="General.personID">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="General.vehicleID = General.vehicleID">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleID = General.vehicleID" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="vehicleID" datatype="String" termtype="ATTRIBUTE" fulltext="General.vehicleID">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="vehicleID" datatype="String" termtype="ATTRIBUTE" fulltext="General.vehicleID">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="General.personRegion = General.personRegion">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = General.personRegion" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="General.vehicleUsageType = General.vehicleUsageType">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleUsageType = General.vehicleUsageType" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="vehicleUsageType" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleUsageType">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="vehicleUsageType" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleUsageType">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="General.agreementMTPLCoverClass = General.agreementMTPLCoverClass">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementMTPLCoverClass = General.agreementMTPLCoverClass" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="General.agreementSalesAgreementNo = General.agreementSalesAgreementNo">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementSalesAgreementNo = General.agreementSalesAgreementNo" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="agreementSalesAgreementNo" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.agreementSalesAgreementNo">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="agreementSalesAgreementNo" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.agreementSalesAgreementNo">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="General.resultPrice = General.resultTariffPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.resultPrice = General.resultTariffPrice" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="resultPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.resultPrice">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="resultTariffPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.resultTariffPrice">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0/@actions.0">
+      <text expression="Result Tariff Price is {General.resultTariffPrice} = {General.aRiskTariffMultiplier}*{General.BMMultiplier}*{General.carAgeMultiplier}*{General.carMakeModelMultiplier}*{General.customerSegmentMultiplier}*{General.fuelMultiplier}*{General.MTPLAgreementMultiplier}*{General.ownerRegNrMultiplier}*{General.personAgeMultiplier}*{General.personTypeMultiplier}*{General.salesAgreementMultiplier}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Result Tariff Price is  + General.resultTariffPrice +  =  + General.aRiskTariffMultiplier + * + General.BMMultiplier + * + General.carAgeMultiplier + * + General.carMakeModelMultiplier + * + General.customerSegmentMultiplier + * + General.fuelMultiplier + * + General.MTPLAgreementMultiplier + * + General.ownerRegNrMultiplier + * + General.personAgeMultiplier + * + General.personTypeMultiplier + * + General.salesAgreementMultiplier" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="BMMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.BMMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="carMakeModelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.carMakeModelMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="resultTariffPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.resultTariffPrice">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="carAgeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.carAgeMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="ownerRegNrMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.ownerRegNrMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="salesAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.salesAgreementMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="personTypeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.personTypeMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="personAgeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.personAgeMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms">
+      <alias value="General"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personID"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleID"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personRegion"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleUsageType"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementMTPLCoverClass"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementSalesAgreementNo"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/resultTariffPrice"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/resultPrice"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/fuelMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/BMMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/customerSegmentMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/carMakeModelMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/aRiskTariffMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MTPLAgreementMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/carAgeMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/ownerRegNrMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/salesAgreementMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personTypeMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personAgeMultiplier"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="35">
+    <actionSection rowCount="50" scrollRowTop="1" columnWidthFactor="0.5">
+      <actionItemList rowHeight="205">
+        <valueSetCell/>
+        <expressionCell external="General.resultTariffPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.resultTariffPrice" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="resultTariffPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.resultTariffPrice">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.personID">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personID" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personID" datatype="String" termtype="ATTRIBUTE" fulltext="General.personID">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.vehicleID">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleID" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleID" datatype="String" termtype="ATTRIBUTE" fulltext="General.vehicleID">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.personRegion">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.vehicleUsageType">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleUsageType" datatype="Integer" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleUsageType" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleUsageType">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.agreementMTPLCoverClass">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementMTPLCoverClass" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.agreementSalesAgreementNo">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementSalesAgreementNo" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="agreementSalesAgreementNo" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.agreementSalesAgreementNo">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.resultPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.resultPrice" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="resultPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.resultPrice">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.6"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.7"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.8"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.9"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.10"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.11"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.12"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.13"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.14"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.15"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.16"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.17"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.18"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="991" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A"/>
+        <text external="Result Tariff Price is {General.resultTariffPrice} = {General.aRiskTariffMultiplier}*{General.BMMultiplier}*{General.carAgeMultiplier}*{General.carMakeModelMultiplier}*{General.customerSegmentMultiplier}*{General.fuelMultiplier}*{General.MTPLAgreementMultiplier}*{General.ownerRegNrMultiplier}*{General.personAgeMultiplier}*{General.personTypeMultiplier}*{General.salesAgreementMultiplier}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Result Tariff Price is  + General.resultTariffPrice +  =  + General.aRiskTariffMultiplier + * + General.BMMultiplier + * + General.carAgeMultiplier + * + General.carMakeModelMultiplier + * + General.customerSegmentMultiplier + * + General.fuelMultiplier + * + General.MTPLAgreementMultiplier + * + General.ownerRegNrMultiplier + * + General.personAgeMultiplier + * + General.personTypeMultiplier + * + General.salesAgreementMultiplier" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="BMMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.BMMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="carMakeModelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.carMakeModelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="resultTariffPrice" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.resultTariffPrice">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="carAgeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.carAgeMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ownerRegNrMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.ownerRegNrMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="salesAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.salesAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="personTypeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.personTypeMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="personAgeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.personAgeMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.44642857142857145"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="374" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="General.aRiskTariffMultiplier*&#xD;&#xA;General.BMMultiplier*&#xD;&#xA;General.carAgeMultiplier*&#xD;&#xA;General.carMakeModelMultiplier*&#xD;&#xA;General.customerSegmentMultiplier*&#xD;&#xA;General.fuelMultiplier*&#xD;&#xA;General.MTPLAgreementMultiplier*&#xD;&#xA;General.ownerRegNrMultiplier*&#xD;&#xA;General.personAgeMultiplier*&#xD;&#xA;General.personTypeMultiplier*&#xD;&#xA;General.salesAgreementMultiplier"/>
+        <actionValueSetCellList valueSet="General.personID"/>
+        <actionValueSetCellList valueSet="General.vehicleID"/>
+        <actionValueSetCellList valueSet="General.personRegion"/>
+        <actionValueSetCellList valueSet="General.vehicleUsageType"/>
+        <actionValueSetCellList valueSet="General.agreementMTPLCoverClass"/>
+        <actionValueSetCellList valueSet="General.agreementSalesAgreementNo"/>
+        <actionValueSetCellList valueSet="General.resultTariffPrice"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

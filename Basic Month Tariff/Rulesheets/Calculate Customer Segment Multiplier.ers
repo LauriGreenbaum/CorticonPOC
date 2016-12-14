@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_XlK4UWltEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personSegment = 'P'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personSegment = 'P'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personSegment" rhs="'P'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.customerSegmentMultiplier = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.customerSegmentMultiplier = 2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personSegment = 'N'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personSegment = 'N'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personSegment" rhs="'N'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.customerSegmentMultiplier = 1.15">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.customerSegmentMultiplier = 1.15" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personSegment = 'EL5'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personSegment = 'EL5'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personSegment" rhs="'EL5'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.customerSegmentMultiplier = 1.1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.customerSegmentMultiplier = 1.1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personSegment = 'JL5'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personSegment = 'JL5'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personSegment" rhs="'JL5'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.customerSegmentMultiplier = 1.1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.customerSegmentMultiplier = 1.1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personSegment = 'EL1'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personSegment = 'EL1'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personSegment" rhs="'EL1'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.customerSegmentMultiplier = 0.95">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.customerSegmentMultiplier = 0.95" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personSegment = 'EL2'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personSegment = 'EL2'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personSegment" rhs="'EL2'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.customerSegmentMultiplier = 0.95">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.customerSegmentMultiplier = 0.95" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personSegment = 'EL3'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personSegment = 'EL3'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personSegment" rhs="'EL3'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.customerSegmentMultiplier = 0.95">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.customerSegmentMultiplier = 0.95" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="not (General.personSegment = 'EL1' or General.personSegment = 'EL2' or General.personSegment = 'EL3' or General.personSegment = 'EL5' or General.personSegment = 'JL5' or General.personSegment = 'N' or General.personSegment = 'P' or General.personSegment = null) or General.personSegment = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( General.personSegment = 'EL1' or General.personSegment = 'EL2' or General.personSegment = 'EL3' or General.personSegment = 'EL5' or General.personSegment = 'JL5' or General.personSegment = 'N' or General.personSegment = 'P' or General.personSegment = null ) or General.personSegment = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personSegment" rhs="other"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.customerSegmentMultiplier = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.customerSegmentMultiplier = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1/@actions.0 #//@ruleset/@rules.2/@actions.0 #//@ruleset/@rules.3/@actions.0 #//@ruleset/@rules.4/@actions.0 #//@ruleset/@rules.5/@actions.0 #//@ruleset/@rules.6/@actions.0 #//@ruleset/@rules.7/@actions.0 #//@ruleset/@rules.8/@actions.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Customer Segment Multiplier is {General.customerSegmentMultiplier}, for Person Segment {General.personSegment}.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer Segment Multiplier is  + General.customerSegmentMultiplier + , for Person Segment  + General.personSegment + ." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <alias value="General"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personSegment"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/customerSegmentMultiplier"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.customerSegmentMultiplier">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.customerSegmentMultiplier" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="991" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A"/>
+        <text external="Customer Segment Multiplier is {General.customerSegmentMultiplier}, for Person Segment {General.personSegment}.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer Segment Multiplier is  + General.customerSegmentMultiplier + , for Person Segment  + General.personSegment + ." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="customerSegmentMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.customerSegmentMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="General.personSegment">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personSegment" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personSegment" datatype="String" termtype="ATTRIBUTE" fulltext="General.personSegment">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20" scrollColumnLeft="2">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'P'"/>
+        <actionValueSetCellList valueSet="2"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'N'"/>
+        <actionValueSetCellList valueSet="1.15"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'EL5'"/>
+        <actionValueSetCellList valueSet="1.1"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'JL5'"/>
+        <actionValueSetCellList valueSet="1.1"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'EL1'"/>
+        <actionValueSetCellList valueSet="0.95"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="'EL2'"/>
+        <actionValueSetCellList valueSet="0.95"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="'EL3'"/>
+        <actionValueSetCellList valueSet="0.95"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="8" columnWidth="100" pRule="#//@ruleset/@rules.8">
+        <conditionValueSetCellList valueSet="other"/>
+        <actionValueSetCellList valueSet="1"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<libraryinfo path="C:/SeesamPOC/SeesamPOCOE" type="PathEntry" ModificationStamp="1462299389387" FullName="SeesamPOCOE" lib_header_magic_number="2384638594569" lib_header_version="15">
+	<procedures>
+		<relative path="">
+			<procedure name="dataSets" SourceFilePath="C:/SeesamPOC/SeesamPOCOE/dataSets.p" RfilePath="C:/SeesamPOC/SeesamPOCOE/dataSets.r"></procedure>
+		</relative>
+	</procedures>
+	<classes>
+	</classes>
+</libraryinfo>

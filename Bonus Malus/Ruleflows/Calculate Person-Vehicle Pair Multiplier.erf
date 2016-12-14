@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_g3xAYCZWEeaSqogwHP_gAw" externalChecksum="1229514692:201531363:1972018159" rulesheetAssets="../Rulesheets/Coeficient%20for%20Person-Vechicle%20Pair/Calculate%20Corporate%20Pair.ers#/">
+  <ruleflow majorVersion="1" vocabularyUpdateStamp="_IZNXsB6_EeaDvNImPejkDg" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:BranchContainer" name="Calculate Person-Vehicle Pair Multiplier" order="1" ruleActivityUpdateStamp="_WeamcCBBEeaw3-Vj9aRinA" invokes="#//@ruleflow/@flowControlList.0">
+      <condition expression="ttGeneralMtplBrms.personIsCorporation">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ttGeneralMtplBrms.personIsCorporation" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="ttGeneralMtplBrms.personIsCorporation">
+              <parentTerm text="ttGeneralMtplBrms" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="ttGeneralMtplBrms"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </condition>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Private Pair" ruleActivityUpdateStamp="_joV8AyA_Eeaw3-Vj9aRinA" invokes="../Rulesheets/Coeficient%20for%20Person-Vechicle%20Pair/Calculate%20Private%20Pair.ers#//@ruleset"/>
+        <label expression="false"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.personIsCorporation" rhs="false"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Corporate Pair" ruleActivityUpdateStamp="_ac45EyA_Eeaw3-Vj9aRinA" invokes="../Rulesheets/Coeficient%20for%20Person-Vechicle%20Pair/Calculate%20Corporate%20Pair.ers#//@ruleset"/>
+        <label expression="true"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.personIsCorporation" rhs="true"/>
+      </branches>
+    </flowControlList>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:BranchContainerShape" x="192" y="78" width="463" height="151" activityNode="#//@ruleflow/@flowControlList.0" valid="true" branchContainer="#//@ruleflow/@flowControlList.0">
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="31" y="12" width="391" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.1" activityNode="#//@ruleflow/@flowControlList.0/@branches.1/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="31" y="60" width="391" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0/@branches.0/@nextStep.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.1" branch="#//@ruleflow/@flowControlList.0/@branches.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.0" branch="#//@ruleflow/@flowControlList.0/@branches.1"/>
+    </flowShapeList>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>

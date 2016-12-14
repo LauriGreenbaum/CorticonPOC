@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_b5emI2ltEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.vechicleFuel = 'BEK'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vechicleFuel = 'BEK'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vechicleFuel" datatype="String" termtype="ATTRIBUTE" fulltext="General.vechicleFuel">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vechicleFuel" rhs="'BEK'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.fuelMultiplier = 0.97">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.fuelMultiplier = 0.97" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.vechicleFuel = 'ELE'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vechicleFuel = 'ELE'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vechicleFuel" datatype="String" termtype="ATTRIBUTE" fulltext="General.vechicleFuel">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vechicleFuel" rhs="'ELE'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.fuelMultiplier = 1.2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.fuelMultiplier = 1.2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.vechicleFuel = 'CNG'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vechicleFuel = 'CNG'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vechicleFuel" datatype="String" termtype="ATTRIBUTE" fulltext="General.vechicleFuel">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vechicleFuel" rhs="'CNG'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.fuelMultiplier = 1.2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.fuelMultiplier = 1.2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.vechicleFuel = 'BEH'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vechicleFuel = 'BEH'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vechicleFuel" datatype="String" termtype="ATTRIBUTE" fulltext="General.vechicleFuel">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vechicleFuel" rhs="'BEH'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.fuelMultiplier = 1.1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.fuelMultiplier = 1.1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.vechicleFuel = 'BEN'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vechicleFuel = 'BEN'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vechicleFuel" datatype="String" termtype="ATTRIBUTE" fulltext="General.vechicleFuel">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vechicleFuel" rhs="'BEN'"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.fuelMultiplier = 0.86">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.fuelMultiplier = 0.86" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="not (General.vechicleFuel = 'BEH' or General.vechicleFuel = 'BEK' or General.vechicleFuel = 'BEN' or General.vechicleFuel = 'CNG' or General.vechicleFuel = 'ELE' or General.vechicleFuel = null) or General.vechicleFuel = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( General.vechicleFuel = 'BEH' or General.vechicleFuel = 'BEK' or General.vechicleFuel = 'BEN' or General.vechicleFuel = 'CNG' or General.vechicleFuel = 'ELE' or General.vechicleFuel = null ) or General.vechicleFuel = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vechicleFuel" datatype="String" termtype="ATTRIBUTE" fulltext="General.vechicleFuel">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vechicleFuel" rhs="other"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.fuelMultiplier = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.fuelMultiplier = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1/@actions.0 #//@ruleset/@rules.2/@actions.0 #//@ruleset/@rules.3/@actions.0 #//@ruleset/@rules.4/@actions.0 #//@ruleset/@rules.5/@actions.0 #//@ruleset/@rules.6/@actions.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Fuel Multiplier is {General.fuelMultiplier}, for Vehicle Fuel Type {General.vechicleFuel}.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Fuel Multiplier is  + General.fuelMultiplier + , for Vehicle Fuel Type  + General.vechicleFuel + ." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="vechicleFuel" datatype="String" termtype="ATTRIBUTE" fulltext="General.vechicleFuel">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <alias value="General"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vechicleFuel"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/fuelMultiplier"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.fuelMultiplier">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.fuelMultiplier" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A"/>
+        <text external="Fuel Multiplier is {General.fuelMultiplier}, for Vehicle Fuel Type {General.vechicleFuel}.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Fuel Multiplier is  + General.fuelMultiplier + , for Vehicle Fuel Type  + General.vechicleFuel + ." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="fuelMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.fuelMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="vechicleFuel" datatype="String" termtype="ATTRIBUTE" fulltext="General.vechicleFuel">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="General.vechicleFuel">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vechicleFuel" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vechicleFuel" datatype="String" termtype="ATTRIBUTE" fulltext="General.vechicleFuel">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'BEK'"/>
+        <actionValueSetCellList valueSet="0.97"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'ELE'"/>
+        <actionValueSetCellList valueSet="1.2"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'CNG'"/>
+        <actionValueSetCellList valueSet="1.2"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'BEH'"/>
+        <actionValueSetCellList valueSet="1.1"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'BEN'"/>
+        <actionValueSetCellList valueSet="0.86"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="other"/>
+        <actionValueSetCellList valueSet="1"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

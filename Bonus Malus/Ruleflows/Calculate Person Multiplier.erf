@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_X66E0DwoEeaEiZXgYubxtg" externalChecksum="1229514692:201531363:1972018159" rulesheetAssets="../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Corporate%20Person%20Input%20A.ers#/ ../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Private%20Person%20Input%20A.ers#/ ../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Person%20Multiplier.ers#/ ../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Person%20Multiplier,%20Can%20Not%20Find%20From%20Table%20Input%20A.ers#/ ../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Person%20Multiplier%20Final%20Step%20Input%20A.ers#/">
+  <ruleflow majorVersion="1" vocabularyUpdateStamp="_FI_eICZUEeaSqogwHP_gAw" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:BranchContainer" name="Calculate Person Multiplier" order="2" ruleActivityUpdateStamp="_Wd1p4DwoEeaEiZXgYubxtg" invokes="#//@ruleflow/@flowControlList.0">
+      <condition expression="ttGeneralMtplBrms.personIsCorporation">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ttGeneralMtplBrms.personIsCorporation" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="ttGeneralMtplBrms.personIsCorporation">
+              <parentTerm text="ttGeneralMtplBrms" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="ttGeneralMtplBrms"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </condition>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Corporate Person Input A" ruleActivityUpdateStamp="_vMId5CZWEeaSqogwHP_gAw" invokes="../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Corporate%20Person%20Input%20A.ers#//@ruleset"/>
+        <label expression="true"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.personIsCorporation" rhs="true"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Private Person Input A" ruleActivityUpdateStamp="_X4VSOTwoEeaEiZXgYubxtg" invokes="../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Private%20Person%20Input%20A.ers#//@ruleset"/>
+        <label expression="false"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.personIsCorporation" rhs="false"/>
+      </branches>
+    </flowControlList>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person Multiplier" order="1" ruleActivityUpdateStamp="_wvo4DCZWEeaSqogwHP_gAw" invokes="../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Person%20Multiplier.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person Multiplier, Can Not Find From Table Input A" order="3" ruleActivityUpdateStamp="_iskgdCvpEea47MxT6AhLDQ" invokes="../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Person%20Multiplier,%20Can%20Not%20Find%20From%20Table%20Input%20A.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person Multiplier Final Step Input A" order="4" ruleActivityUpdateStamp="_wLLVQCvWEea47MxT6AhLDQ" invokes="../Rulesheets/Coeficient%20for%20Person%20Input%20A/Calculate%20Person%20Multiplier%20Final%20Step%20Input%20A.ers#//@ruleset"/>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:BranchContainerShape" x="342" y="114" width="451" height="151" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.0" valid="true" branchContainer="#//@ruleflow/@flowControlList.0">
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="48" y="20" width="290" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0/@branches.0/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="49" y="60" width="289" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.1" activityNode="#//@ruleflow/@flowControlList.0/@branches.1/@nextStep.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.0" branch="#//@ruleflow/@flowControlList.0/@branches.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.1" branch="#//@ruleflow/@flowControlList.0/@branches.1"/>
+    </flowShapeList>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="342" y="60" width="451" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.1"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="342" y="282" width="451" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.2"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="342" y="336" width="451" height="36" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" activityNode="#//@ruleflow/@flowControlList.3"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.0" targetShape="#//@ruleflowViewList.0/@flowShapeList.2"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.1" targetShape="#//@ruleflowViewList.0/@flowShapeList.0"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.2" targetShape="#//@ruleflowViewList.0/@flowShapeList.3"/>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>

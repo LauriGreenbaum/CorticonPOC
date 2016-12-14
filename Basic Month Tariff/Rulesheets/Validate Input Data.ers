@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_n3xkKGltEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <rule/>
+    <rule>
+      <condition/>
+      <action>
+        <opaqueExpression expression="General.InputDataOK = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.InputDataOK = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="InputDataOK" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.InputDataOK">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.inputDataErrorMessage = 'PersonIsCorporation is mandatory'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.inputDataErrorMessage = 'PersonIsCorporation is mandatory'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="inputDataErrorMessage" datatype="String" termtype="ATTRIBUTE" fulltext="General.inputDataErrorMessage">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personIsCorporation = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personIsCorporation = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personIsCorporation" rhs="null"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.InputDataOK = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.InputDataOK = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="InputDataOK" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.InputDataOK">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.inputDataErrorMessage = 'PersonIsCorporation is mandatory'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.inputDataErrorMessage = 'PersonIsCorporation is mandatory'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="inputDataErrorMessage" datatype="String" termtype="ATTRIBUTE" fulltext="General.inputDataErrorMessage">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(General.personIsCorporation)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( General.personIsCorporation ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personIsCorporation" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.InputDataOK = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.InputDataOK = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="InputDataOK" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.InputDataOK">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(General.personIsCorporation)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( General.personIsCorporation ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personIsCorporation" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.InputDataOK = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.InputDataOK = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="InputDataOK" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.InputDataOK">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.1/@actions.1 #//@ruleset/@rules.2/@actions.1">
+      <text expression="PersonIsCorporation is mandatory, current value {General.personIsCorporation}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonIsCorporation is mandatory, current value  + General.personIsCorporation" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="PersonIsCorporation is correctly assigned, current value {General.personIsCorporation}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonIsCorporation is correctly assigned, current value  + General.personIsCorporation" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms" ruleStatements="#//@ruleset/@ruleStatements.1">
+      <alias value="General"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personIsCorporation"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/InputDataOK"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/inputDataErrorMessage"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.InputDataOK">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.InputDataOK" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="InputDataOK" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.InputDataOK">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.inputDataErrorMessage">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.inputDataErrorMessage" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inputDataErrorMessage" datatype="String" termtype="ATTRIBUTE" fulltext="General.inputDataErrorMessage">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="B1:B2"/>
+        <text external="PersonIsCorporation is mandatory, current value {General.personIsCorporation}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonIsCorporation is mandatory, current value  + General.personIsCorporation" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="B3:B4"/>
+        <text external="PersonIsCorporation is correctly assigned, current value {General.personIsCorporation}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonIsCorporation is correctly assigned, current value  + General.personIsCorporation" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="General.personIsCorporation">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personIsCorporation" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="198" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="'PersonIsCorporation is mandatory'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="null"/>
+        <actionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="'PersonIsCorporation is mandatory'"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="T"/>
+        <actionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="T"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

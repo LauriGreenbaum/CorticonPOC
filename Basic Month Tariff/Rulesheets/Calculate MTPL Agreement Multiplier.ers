@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_dNcIYmltEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.agreementMTPLCoverClass = '3L'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementMTPLCoverClass = '3L'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.agreementMTPLCoverClass" rhs="'3L'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.MTPLAgreementMultiplier = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MTPLAgreementMultiplier = 5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.agreementMTPLCoverClass = '5L'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementMTPLCoverClass = '5L'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.agreementMTPLCoverClass" rhs="'5L'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.MTPLAgreementMultiplier = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MTPLAgreementMultiplier = 5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.agreementMTPLCoverClass = '6L'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementMTPLCoverClass = '6L'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.agreementMTPLCoverClass" rhs="'6L'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.MTPLAgreementMultiplier = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MTPLAgreementMultiplier = 5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.agreementMTPLCoverClass = '7L'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementMTPLCoverClass = '7L'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.agreementMTPLCoverClass" rhs="'7L'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.MTPLAgreementMultiplier = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MTPLAgreementMultiplier = 5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.agreementMTPLCoverClass = '8L'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementMTPLCoverClass = '8L'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.agreementMTPLCoverClass" rhs="'8L'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.MTPLAgreementMultiplier = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MTPLAgreementMultiplier = 5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="not (General.agreementMTPLCoverClass = '3L' or General.agreementMTPLCoverClass = '5L' or General.agreementMTPLCoverClass = '6L' or General.agreementMTPLCoverClass = '7L' or General.agreementMTPLCoverClass = '8L' or General.agreementMTPLCoverClass = null) or General.agreementMTPLCoverClass = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( General.agreementMTPLCoverClass = '3L' or General.agreementMTPLCoverClass = '5L' or General.agreementMTPLCoverClass = '6L' or General.agreementMTPLCoverClass = '7L' or General.agreementMTPLCoverClass = '8L' or General.agreementMTPLCoverClass = null ) or General.agreementMTPLCoverClass = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.agreementMTPLCoverClass" rhs="other"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.MTPLAgreementMultiplier = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MTPLAgreementMultiplier = 1" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement>
+      <text expression="MTPL Agreement Multiplier is {General.MTPLAgreementMultiplier}, for Agreement Cover Class {General.agreementMTPLCoverClass}.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="MTPL Agreement Multiplier is  + General.MTPLAgreementMultiplier + , for Agreement Cover Class  + General.agreementMTPLCoverClass + ." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms">
+      <alias value="General"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/agreementMTPLCoverClass"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MTPLAgreementMultiplier"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.MTPLAgreementMultiplier">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MTPLAgreementMultiplier" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="991" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference/>
+        <text external="MTPL Agreement Multiplier is {General.MTPLAgreementMultiplier}, for Agreement Cover Class {General.agreementMTPLCoverClass}.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="MTPL Agreement Multiplier is  + General.MTPLAgreementMultiplier + , for Agreement Cover Class  + General.agreementMTPLCoverClass + ." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="MTPLAgreementMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MTPLAgreementMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="General.agreementMTPLCoverClass">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.agreementMTPLCoverClass" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="agreementMTPLCoverClass" datatype="String" termtype="ATTRIBUTE" fulltext="General.agreementMTPLCoverClass">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'3L'"/>
+        <actionValueSetCellList valueSet="5"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'5L'"/>
+        <actionValueSetCellList valueSet="5"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'6L'"/>
+        <actionValueSetCellList valueSet="5"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'7L'"/>
+        <actionValueSetCellList valueSet="5"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="'8L'"/>
+        <actionValueSetCellList valueSet="5"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="other"/>
+        <actionValueSetCellList valueSet="1"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

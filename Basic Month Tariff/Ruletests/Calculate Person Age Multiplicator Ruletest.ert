@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_ywANsHP8EeaTXMQlbHNaDA" externalChecksum="1229514692:201531363">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_YSkXkHM2EeaXfcBhnlmajQ" externalChecksum="1229514692:201531363">
+    <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_YSiiYHM2EeaXfcBhnlmajQ" key="1" type="Validation" severity="Error" invalidObjects="#//@testsheetAssets.0/@testsheetViewList.0/@inputRoot/@children.1" textKey="TestsheetTreeSetModelAPIImpl.Validation.Reference.Entity" locationKey="TestsheetTreeSetModelAPIImpl.Validation.NullTemplate">
+      <textVariables>ttOutputMtplBrms</textVariables>
+      <locationVariables>ttOutputMtplBrms [1]</locationVariables>
+    </validationMessages>
+    <testsheet ruleActivityUpdateStamp="_hNVFZWltEeapXdVOEygTbQ" ruleActivity="../Rulesheets/Calculate%20Person%20Age%20Multiplicator.ers#//@ruleset">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="01/01/1928" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personBirthDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="false" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personIsCorporation"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" validationMessages="#//@testsheetAssets.0/@validationMessages.0" nodeID="1" manuallyCreated="true" eClass="../../Vocabularies/SeesamPOC.ecore#//ttOutputMtplBrms">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttOutputMtplBrms/personAgeMultiplier"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="01/01/1928" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personBirthDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="false" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personIsCorporation"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../../Vocabularies/SeesamPOC.ecore#//ttOutputMtplBrms">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.980000" eAttribute="../../Vocabularies/SeesamPOC.ecore#//ttOutputMtplBrms/personAgeMultiplier"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_94gV4W9LEea11LcoQ3Ikcg" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="../../Vocabularies/SeesamPOC.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="untitled_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

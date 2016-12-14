@@ -1,0 +1,2813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_n-K8g2lsEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+  <languageCode>en_GB</languageCode>
+  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../../Vocabularies/SeesamPOC.ecore#/">
+    <rule/>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 784">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 784" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="784"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 5.7524">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 5.7524" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 795">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 795" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="795"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.5221">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.5221" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 78">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 78" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="78"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.4047">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.4047" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="37"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.9354">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.9354" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 625">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 625" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="625"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.9328">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.9328" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 70">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 70" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="70"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.1947">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.1947" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 82">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 82" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="82"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 2.6917">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 2.6917" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 51">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 51" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="51"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.3035">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.3035" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 44">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 44" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="44"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.2136">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.2136" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 511">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 511" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="511"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.6355">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.6355" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 59">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 59" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="59"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.8453">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.8453" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 74">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 74" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="74"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.3035">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.3035" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 84">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="84"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.0763">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.0763" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 67">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 67" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="67"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.1462">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.1462" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 57">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 57" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="57"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.3035">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.3035" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 39">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 39" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="39"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.8453">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.8453" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 86">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 86" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="86"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.0763">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.0763" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 49">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 49" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="49"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.4957">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.4957" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 322">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 322" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="322"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.0901">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.0901" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 65">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 65" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="65"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 1..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 1 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="1..7"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 2.6218">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 2.6218" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 784">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 784" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="784"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 6.2888">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 6.2888" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 795">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 795" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="795"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.6742">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.6742" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 78">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 78" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="78"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 5.0082">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 5.0082" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="37"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 5.6114">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 5.6114" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 625">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 625" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="625"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.2231">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.2231" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 70">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 70" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="70"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.7696">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.7696" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 82">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 82" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="82"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.0605">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.0605" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 51">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 51" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="51"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.7562">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.7562" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 44">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 44" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="44"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.5932">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.5932" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 511">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 511" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="511"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.617">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.617" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 59">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 59" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="59"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.776">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.776" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 74">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 74" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="74"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.5474">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.5474" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 84">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="84"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.0605">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.0605" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 67">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 67" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="67"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.3785">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.3785" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 57">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 57" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="57"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.5474">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.5474" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 39">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 39" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="39"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.9747">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.9747" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 86">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 86" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="86"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.0605">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.0605" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 49">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 49" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="49"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 3.7263">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 3.7263" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 322">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 322" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="322"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.3921">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.3921" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 65">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 65" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="65"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW in 8..37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW in 8 .. 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs="8..37"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 2.7326">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 2.7326" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 784">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 784" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="784"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 11.518">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 11.518" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 795">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 795" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="795"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 9.1723">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 9.1723" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 78">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 78" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="78"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 8.872">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 8.872" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 37">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 37" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="37"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 10.3232">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 10.3232" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 625">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 625" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="625"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 8.1244">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 8.1244" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 70">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 70" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="70"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 8.4494">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 8.4494" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 82">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 82" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="82"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 5.541">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 5.541" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 51">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 51" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="51"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 7.1657">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 7.1657" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 44">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 44" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="44"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 6.5284">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 6.5284" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 511">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 511" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="511"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 7.182">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 7.182" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 59">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 59" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="59"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 7.1494">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 7.1494" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 74">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 74" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="74"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 6.3128">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 6.3128" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 84">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="84"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 5.8983">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 5.8983" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 67">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 67" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="67"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 6.0121">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 6.0121" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 57">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 57" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="57"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 6.8245">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 6.8245" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 39">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 39" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="39"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 7.1494">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 7.1494" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 86">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 86" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="86"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 6.0771">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 6.0771" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 49">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 49" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="49"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 6.9058">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 6.9058" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 322">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 322" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="322"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 7.8157">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 7.8157" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="General.personRegion = 65">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion = 65" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personRegion" rhs="65"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="General.vehicleKW >= 38">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW >= 38" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.vehicleKW" rhs=">= 38"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 4.6717">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 4.6717" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1/@actions.0 #//@ruleset/@rules.2/@actions.0 #//@ruleset/@rules.3/@actions.0 #//@ruleset/@rules.4/@actions.0 #//@ruleset/@rules.5/@actions.0 #//@ruleset/@rules.6/@actions.0 #//@ruleset/@rules.7/@actions.0 #//@ruleset/@rules.8/@actions.0 #//@ruleset/@rules.9/@actions.0 #//@ruleset/@rules.10/@actions.0 #//@ruleset/@rules.11/@actions.0 #//@ruleset/@rules.12/@actions.0 #//@ruleset/@rules.13/@actions.0 #//@ruleset/@rules.14/@actions.0 #//@ruleset/@rules.15/@actions.0 #//@ruleset/@rules.16/@actions.0 #//@ruleset/@rules.17/@actions.0 #//@ruleset/@rules.18/@actions.0 #//@ruleset/@rules.19/@actions.0 #//@ruleset/@rules.20/@actions.0 #//@ruleset/@rules.21/@actions.0 #//@ruleset/@rules.22/@actions.0 #//@ruleset/@rules.23/@actions.0 #//@ruleset/@rules.24/@actions.0 #//@ruleset/@rules.25/@actions.0 #//@ruleset/@rules.26/@actions.0 #//@ruleset/@rules.27/@actions.0 #//@ruleset/@rules.28/@actions.0 #//@ruleset/@rules.29/@actions.0 #//@ruleset/@rules.30/@actions.0 #//@ruleset/@rules.31/@actions.0 #//@ruleset/@rules.32/@actions.0 #//@ruleset/@rules.33/@actions.0 #//@ruleset/@rules.34/@actions.0 #//@ruleset/@rules.35/@actions.0 #//@ruleset/@rules.36/@actions.0 #//@ruleset/@rules.37/@actions.0 #//@ruleset/@rules.38/@actions.0 #//@ruleset/@rules.39/@actions.0 #//@ruleset/@rules.40/@actions.0 #//@ruleset/@rules.41/@actions.0 #//@ruleset/@rules.42/@actions.0 #//@ruleset/@rules.43/@actions.0 #//@ruleset/@rules.44/@actions.0 #//@ruleset/@rules.45/@actions.0 #//@ruleset/@rules.46/@actions.0 #//@ruleset/@rules.47/@actions.0 #//@ruleset/@rules.48/@actions.0 #//@ruleset/@rules.49/@actions.0 #//@ruleset/@rules.50/@actions.0 #//@ruleset/@rules.51/@actions.0 #//@ruleset/@rules.52/@actions.0 #//@ruleset/@rules.53/@actions.0 #//@ruleset/@rules.54/@actions.0 #//@ruleset/@rules.55/@actions.0 #//@ruleset/@rules.56/@actions.0 #//@ruleset/@rules.57/@actions.0 #//@ruleset/@rules.58/@actions.0 #//@ruleset/@rules.59/@actions.0 #//@ruleset/@rules.60/@actions.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The Risk Tariff Multiplier is equal to {General.aRiskTariffMultiplier} for a Vehicle Usage Type {General.vehicleUsageType} Person Region, {General.personRegion} and Vehicle with {General.vehicleKW} KW.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The Risk Tariff Multiplier is equal to  + General.aRiskTariffMultiplier +  for a Vehicle Usage Type  + General.vehicleUsageType +  Person Region,  + General.personRegion +  and Vehicle with  + General.vehicleKW +  KW." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="vehicleUsageType" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleUsageType">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <alias value="General"/>
+      <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personRegion"/>
+      <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleKW"/>
+      <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/vehicleUsageType"/>
+      <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/aRiskTariffMultiplier"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="General.aRiskTariffMultiplier">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A"/>
+        <text external="The Risk Tariff Multiplier is equal to {General.aRiskTariffMultiplier} for a Vehicle Usage Type {General.vehicleUsageType} Person Region, {General.personRegion} and Vehicle with {General.vehicleKW} KW.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The Risk Tariff Multiplier is equal to  + General.aRiskTariffMultiplier +  for a Vehicle Usage Type  + General.vehicleUsageType +  Person Region,  + General.personRegion +  and Vehicle with  + General.vehicleKW +  KW." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="vehicleUsageType" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleUsageType">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="General.personRegion">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personRegion" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personRegion" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.personRegion">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="General.vehicleKW">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.vehicleKW" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="vehicleKW" datatype="Integer" termtype="ATTRIBUTE" fulltext="General.vehicleKW">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="61">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="784"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="5.7524"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="795"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="4.5221"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="78"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="4.4047"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="37"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="4.9354"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="625"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.9328"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="70"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="4.1947"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="82"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="2.6917"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="8" columnWidth="100" pRule="#//@ruleset/@rules.8">
+        <conditionValueSetCellList valueSet="51"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.3035"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="9" columnWidth="100" pRule="#//@ruleset/@rules.9">
+        <conditionValueSetCellList valueSet="44"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="4.2136"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="10" columnWidth="100" pRule="#//@ruleset/@rules.10">
+        <conditionValueSetCellList valueSet="511"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.6355"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="11" columnWidth="100" pRule="#//@ruleset/@rules.11">
+        <conditionValueSetCellList valueSet="59"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.8453"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="12" columnWidth="100" pRule="#//@ruleset/@rules.12">
+        <conditionValueSetCellList valueSet="74"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.3035"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="13" columnWidth="100" pRule="#//@ruleset/@rules.13">
+        <conditionValueSetCellList valueSet="84"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.0763"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="14" columnWidth="100" pRule="#//@ruleset/@rules.14">
+        <conditionValueSetCellList valueSet="67"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.1462"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="15" columnWidth="100" pRule="#//@ruleset/@rules.15">
+        <conditionValueSetCellList valueSet="57"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.3035"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="16" columnWidth="100" pRule="#//@ruleset/@rules.16">
+        <conditionValueSetCellList valueSet="39"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.8453"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="17" columnWidth="100" pRule="#//@ruleset/@rules.17">
+        <conditionValueSetCellList valueSet="86"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.0763"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="18" columnWidth="100" pRule="#//@ruleset/@rules.18">
+        <conditionValueSetCellList valueSet="49"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="3.4957"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="19" columnWidth="100" pRule="#//@ruleset/@rules.19">
+        <conditionValueSetCellList valueSet="322"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="4.0901"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="20" columnWidth="100" pRule="#//@ruleset/@rules.20">
+        <conditionValueSetCellList valueSet="65"/>
+        <conditionValueSetCellList valueSet="1..7"/>
+        <actionValueSetCellList valueSet="2.6218"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="21" columnWidth="100" pRule="#//@ruleset/@rules.21">
+        <conditionValueSetCellList valueSet="784"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="6.2888"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="22" columnWidth="100" pRule="#//@ruleset/@rules.22">
+        <conditionValueSetCellList valueSet="795"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="4.6742"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="23" columnWidth="100" pRule="#//@ruleset/@rules.23">
+        <conditionValueSetCellList valueSet="78"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="5.0082"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="24" columnWidth="100" pRule="#//@ruleset/@rules.24">
+        <conditionValueSetCellList valueSet="37"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="5.6114"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="25" columnWidth="100" pRule="#//@ruleset/@rules.25">
+        <conditionValueSetCellList valueSet="625"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="4.2231"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="26" columnWidth="100" pRule="#//@ruleset/@rules.26">
+        <conditionValueSetCellList valueSet="70"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="4.7696"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="27" columnWidth="100" pRule="#//@ruleset/@rules.27">
+        <conditionValueSetCellList valueSet="82"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.0605"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="28" columnWidth="100" pRule="#//@ruleset/@rules.28">
+        <conditionValueSetCellList valueSet="51"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.7562"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="29" columnWidth="100" pRule="#//@ruleset/@rules.29">
+        <conditionValueSetCellList valueSet="44"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.5932"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="30" columnWidth="100" pRule="#//@ruleset/@rules.30">
+        <conditionValueSetCellList valueSet="511"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.617"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="31" columnWidth="100" pRule="#//@ruleset/@rules.31">
+        <conditionValueSetCellList valueSet="59"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.776"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="32" columnWidth="100" pRule="#//@ruleset/@rules.32">
+        <conditionValueSetCellList valueSet="74"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.5474"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="33" columnWidth="100" pRule="#//@ruleset/@rules.33">
+        <conditionValueSetCellList valueSet="84"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.0605"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="34" columnWidth="100" pRule="#//@ruleset/@rules.34">
+        <conditionValueSetCellList valueSet="67"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.3785"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="35" columnWidth="100" pRule="#//@ruleset/@rules.35">
+        <conditionValueSetCellList valueSet="57"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.5474"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="36" columnWidth="100" pRule="#//@ruleset/@rules.36">
+        <conditionValueSetCellList valueSet="39"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.9747"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="37" columnWidth="100" pRule="#//@ruleset/@rules.37">
+        <conditionValueSetCellList valueSet="86"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.0605"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="38" columnWidth="100" pRule="#//@ruleset/@rules.38">
+        <conditionValueSetCellList valueSet="49"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="3.7263"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="39" columnWidth="100" pRule="#//@ruleset/@rules.39">
+        <conditionValueSetCellList valueSet="322"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="4.3921"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="40" columnWidth="100" pRule="#//@ruleset/@rules.40">
+        <conditionValueSetCellList valueSet="65"/>
+        <conditionValueSetCellList valueSet="8..37"/>
+        <actionValueSetCellList valueSet="2.7326"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="41" columnWidth="100" pRule="#//@ruleset/@rules.41">
+        <conditionValueSetCellList valueSet="784"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="11.518"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="42" columnWidth="100" pRule="#//@ruleset/@rules.42">
+        <conditionValueSetCellList valueSet="795"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="9.1723"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="43" columnWidth="100" pRule="#//@ruleset/@rules.43">
+        <conditionValueSetCellList valueSet="78"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="8.872"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="44" columnWidth="100" pRule="#//@ruleset/@rules.44">
+        <conditionValueSetCellList valueSet="37"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="10.3232"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="45" columnWidth="100" pRule="#//@ruleset/@rules.45">
+        <conditionValueSetCellList valueSet="625"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="8.1244"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="46" columnWidth="100" pRule="#//@ruleset/@rules.46">
+        <conditionValueSetCellList valueSet="70"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="8.4494"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="47" columnWidth="100" pRule="#//@ruleset/@rules.47">
+        <conditionValueSetCellList valueSet="82"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="5.541"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="48" columnWidth="100" pRule="#//@ruleset/@rules.48">
+        <conditionValueSetCellList valueSet="51"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="7.1657"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="49" columnWidth="100" pRule="#//@ruleset/@rules.49">
+        <conditionValueSetCellList valueSet="44"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="6.5284"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="50" columnWidth="100" pRule="#//@ruleset/@rules.50">
+        <conditionValueSetCellList valueSet="511"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="7.182"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="51" columnWidth="100" pRule="#//@ruleset/@rules.51">
+        <conditionValueSetCellList valueSet="59"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="7.1494"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="52" columnWidth="100" pRule="#//@ruleset/@rules.52">
+        <conditionValueSetCellList valueSet="74"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="6.3128"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="53" columnWidth="100" pRule="#//@ruleset/@rules.53">
+        <conditionValueSetCellList valueSet="84"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="5.8983"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="54" columnWidth="100" pRule="#//@ruleset/@rules.54">
+        <conditionValueSetCellList valueSet="67"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="6.0121"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="55" columnWidth="100" pRule="#//@ruleset/@rules.55">
+        <conditionValueSetCellList valueSet="57"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="6.8245"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="56" columnWidth="100" pRule="#//@ruleset/@rules.56">
+        <conditionValueSetCellList valueSet="39"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="7.1494"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="57" columnWidth="100" pRule="#//@ruleset/@rules.57">
+        <conditionValueSetCellList valueSet="86"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="6.0771"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="58" columnWidth="100" pRule="#//@ruleset/@rules.58">
+        <conditionValueSetCellList valueSet="49"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="6.9058"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="59" columnWidth="100" pRule="#//@ruleset/@rules.59">
+        <conditionValueSetCellList valueSet="322"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="7.8157"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="60" columnWidth="100" pRule="#//@ruleset/@rules.60">
+        <conditionValueSetCellList valueSet="65"/>
+        <conditionValueSetCellList valueSet=">= 38"/>
+        <actionValueSetCellList valueSet="4.6717"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
