@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_ibgIs2ltEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_9zIYIX5pEeaPuJRcL-SSsA" externalChecksum="1229514692:507989954:1972018159">
   <languageCode>en_GB</languageCode>
-  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+  <ruleset vocabularyUpdateStamp="_zi3AcH3gEeaS1KS4E03n7g" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
     <rule/>
     <rule>
       <condition>
@@ -45,8 +45,8 @@
         <viewExpressions lhs="General.personIsCorporation" rhs="F"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.personTypeMultiplier = 0.9">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personTypeMultiplier = 0.9" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.personTypeMultiplier = 0.93">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personTypeMultiplier = 0.93" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="personTypeMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.personTypeMultiplier">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -142,7 +142,7 @@
       </ruleColumnList>
       <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
         <conditionValueSetCellList valueSet="F"/>
-        <actionValueSetCellList valueSet="0.9"/>
+        <actionValueSetCellList valueSet="0.93"/>
       </ruleColumnList>
     </ruleSection>
   </rulesheetViewList>

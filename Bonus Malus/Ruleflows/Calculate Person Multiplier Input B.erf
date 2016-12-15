@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_rDUCkCvhEea47MxT6AhLDQ" externalChecksum="1229514692:201531363:1972018159" rulesheetAssets="../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Person%20Multiplier,%20Can%20Not%20Find%20From%20Table%20Input%20B.ers#/">
-  <ruleflow majorVersion="1" vocabularyUpdateStamp="_FI_eICZUEeaSqogwHP_gAw" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
-    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Time Multiplier Prepare B" order="1" ruleActivityUpdateStamp="_4MrvhiBPEeaw3-Vj9aRinA" invokes="../Rulesheets/Calculate%20Time%20Multiplier/Calculate%20Time%20Multiplier%20Prepare%20B.ers#//@ruleset"/>
-    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:BranchContainer" name="Calculate Private Person B" order="2" ruleActivityUpdateStamp="_SVtvICvbEea47MxT6AhLDQ" invokes="#//@ruleflow/@flowControlList.1">
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_TbGOAJlkEeajEKKD3xL1hA" externalChecksum="1229514692:201531363:1972018159" rulesheetAssets="../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Corporate%20Person%20Input%20B.ers#/ ../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Private%20Person%20Input%20B.ers#/ ../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Person%20Multiplier,%20Can%20Not%20Find%20From%20Table%20Input%20B.ers#/">
+  <ruleflow majorVersion="1" vocabularyUpdateStamp="_AWeAIJlcEeajEKKD3xL1hA" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:BranchContainer" name="Calculate Private Person B" order="1" ruleActivityUpdateStamp="_TbGOAJlkEeajEKKD3xL1hA" invokes="#//@ruleflow/@flowControlList.0">
       <condition expression="ttGeneralMtplBrms.personIsCorporation">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ttGeneralMtplBrms.personIsCorporation" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
           <referencedTermList>
@@ -13,31 +12,26 @@
         </parserOutput>
       </condition>
       <branches>
-        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Private Person Input B" ruleActivityUpdateStamp="_A0oeACvbEea47MxT6AhLDQ" invokes="../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Private%20Person%20Input%20B.ers#//@ruleset"/>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Private Person Input B" ruleActivityUpdateStamp="_6Xsa85ljEeajEKKD3xL1hA" invokes="../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Private%20Person%20Input%20B.ers#//@ruleset"/>
         <label expression="false"/>
         <viewExpressions lhs="ttGeneralMtplBrms.personIsCorporation" rhs="false"/>
       </branches>
       <branches>
-        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Corporate Person Input B" ruleActivityUpdateStamp="_Br9HkivbEea47MxT6AhLDQ" invokes="../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Corporate%20Person%20Input%20B.ers#//@ruleset"/>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Corporate Person Input B" ruleActivityUpdateStamp="_dBfV85ljEeajEKKD3xL1hA" invokes="../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Corporate%20Person%20Input%20B.ers#//@ruleset"/>
         <label expression="true"/>
         <viewExpressions lhs="ttGeneralMtplBrms.personIsCorporation" rhs="true"/>
       </branches>
     </flowControlList>
-    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person Multiplier, Can Not Find From Table Input B" order="3" ruleActivityUpdateStamp="_MBxE0CvbEea47MxT6AhLDQ" invokes="../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Person%20Multiplier,%20Can%20Not%20Find%20From%20Table%20Input%20B.ers#//@ruleset"/>
-    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person Multiplier Final Step Input B" order="4" ruleActivityUpdateStamp="_SvvYtCvbEea47MxT6AhLDQ" invokes="../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Person%20Multiplier%20Final%20Step%20Input%20B.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person Multiplier, Can Not Find From Table Input B" order="2" ruleActivityUpdateStamp="_QACcY5lkEeajEKKD3xL1hA" invokes="../Rulesheets/Calculate%20Time%20Multiplier/Coeficient%20for%20Person%20Input%20B/Calculate%20Person%20Multiplier,%20Can%20Not%20Find%20From%20Table%20Input%20B.ers#//@ruleset"/>
   </ruleflow>
   <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
-    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="402" y="72" width="427" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0"/>
-    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:BranchContainerShape" x="402" y="120" width="427" height="145" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.1" valid="true" branchContainer="#//@ruleflow/@flowControlList.1">
-      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="45" y="20" width="335" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.1/@branchEdgeList.1" activityNode="#//@ruleflow/@flowControlList.1/@branches.1/@nextStep.0"/>
-      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="43" y="66" width="335" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.1/@branchEdgeList.0" activityNode="#//@ruleflow/@flowControlList.1/@branches.0/@nextStep.0"/>
-      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.1/@flowShapeList.1" branch="#//@ruleflow/@flowControlList.1/@branches.0"/>
-      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.1/@flowShapeList.0" branch="#//@ruleflow/@flowControlList.1/@branches.1"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:BranchContainerShape" x="402" y="120" width="427" height="145" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0" valid="true" branchContainer="#//@ruleflow/@flowControlList.0">
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="45" y="20" width="335" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.1" activityNode="#//@ruleflow/@flowControlList.0/@branches.1/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="43" y="66" width="335" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.0/@branchEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0/@branches.0/@nextStep.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.1" branch="#//@ruleflow/@flowControlList.0/@branches.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.0/@flowShapeList.0" branch="#//@ruleflow/@flowControlList.0/@branches.1"/>
     </flowShapeList>
-    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="402" y="282" width="427" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.2"/>
-    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="402" y="336" width="427" height="36" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" activityNode="#//@ruleflow/@flowControlList.3"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="402" y="282" width="427" height="36" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.1"/>
     <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.0" targetShape="#//@ruleflowViewList.0/@flowShapeList.1"/>
-    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.1" targetShape="#//@ruleflowViewList.0/@flowShapeList.2"/>
-    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.2" targetShape="#//@ruleflowViewList.0/@flowShapeList.3"/>
   </ruleflowViewList>
 </com.corticon.rulesemf.assetmodel:RuleflowAsset>

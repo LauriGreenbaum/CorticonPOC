@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="5" minorVersionNumber="6" buildNumber="6096" updateStamp="_39SL0L3zEeafTega9vdUcg" externalChecksum="1229514692:201531363:2081899827" rulesheetAssets="../Rulesheets/Calculate%20Person%20Age%20Multiplicator.ers#/ ../Rulesheets/Calculate%20Person%20Type%20Multiplier.ers#/ ../Rulesheets/Calculate%20Sales%20Agreement%20Multiplier.ers#/ ../Rulesheets/Calculate%20MTPL%20Agreement%20Multiplier.ers#/ ../Rulesheets/Calculate%20Owner%20Reg%20Nr%20Multiplier.ers#/ ../Rulesheets/Calculate%20Customer%20Segment%20Multiplier.ers#/ ../Rulesheets/Calculate%20Basic%20Month%20Tariff.ers#/ ../Rulesheets/Calculate%20Car%20Age%20Multiplicator.ers#/ ../Rulesheets/Calculate%20No%20Car%20Age%20Multiplicator.ers#/ ../Rulesheets/Calculate%20Fuel%20Multiplier.ers#/ ../Rulesheets/Calcualate%20No%20Fuel%20Multiplier.ers#/" ruleflowAssets="Calculate%20Car%20Make%20and%20Model%20Multiplicator.erf#/ Retrieve%20A-Risk%20Premium.erf#/ ../../Bonus%20Malus/Ruleflows/Calculate%20Bonus%20Malus.erf#/">
+  <ruleflow majorVersion="1" minorVersion="1" vocabularyUpdateStamp="_RfAnwKTIEeaLOcgviUOl8Q" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate person age multiplicator" order="2" ruleActivityUpdateStamp="_4S6ysHwKEeaS1KS4E03n7g" invokes="../Rulesheets/Calculate%20Person%20Age%20Multiplicator.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person Type Multiplier" order="5" ruleActivityUpdateStamp="_9zIYIX5pEeaPuJRcL-SSsA" invokes="../Rulesheets/Calculate%20Person%20Type%20Multiplier.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Sales Agreement Multiplier" order="6" ruleActivityUpdateStamp="_05xKw35pEeaPuJRcL-SSsA" invokes="../Rulesheets/Calculate%20Sales%20Agreement%20Multiplier.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate MTPL Agreement Multiplier" order="7" ruleActivityUpdateStamp="_dNcIYmltEeapXdVOEygTbQ" invokes="../Rulesheets/Calculate%20MTPL%20Agreement%20Multiplier.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Owner Reg Nr Multiplier" order="8" ruleActivityUpdateStamp="_ey_w82ltEeapXdVOEygTbQ" invokes="../Rulesheets/Calculate%20Owner%20Reg%20Nr%20Multiplier.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Customer Segment Multiplier" order="10" ruleActivityUpdateStamp="__BZNIplnEeajEKKD3xL1hA" invokes="../Rulesheets/Calculate%20Customer%20Segment%20Multiplier.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate basic month tariff" order="12" ruleActivityUpdateStamp="_oLR5oqTvEeaLOcgviUOl8Q" invokes="../Rulesheets/Calculate%20Basic%20Month%20Tariff.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Car Make and Model Multiplicator" order="4" ruleActivityUpdateStamp="_JWGrgW9VEeaevqmegATM5w" invokes="Calculate%20Car%20Make%20and%20Model%20Multiplicator.erf#//@ruleflow"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Retrieve A-Risk Premium" order="1" ruleActivityUpdateStamp="_1N9qUJ7wEea5aNUI0Dva3w" invokes="Retrieve%20A-Risk%20Premium.erf#//@ruleflow"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Bonus Malus" order="11" ruleActivityUpdateStamp="_KAGCgKTxEeaLOcgviUOl8Q" invokes="../../Bonus%20Malus/Ruleflows/Calculate%20Bonus%20Malus.erf#//@ruleflow"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:BranchContainer" name="ShouldCarAgeBeCalculated" order="3" ruleActivityUpdateStamp="_d6PswbyrEeafTega9vdUcg" invokes="#//@ruleflow/@flowControlList.10">
+      <condition expression="ttGeneralMtplBrms.vehicleUsageType">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ttGeneralMtplBrms.vehicleUsageType" datatype="Integer" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="vehicleUsageType" datatype="Integer" termtype="ATTRIBUTE" fulltext="ttGeneralMtplBrms.vehicleUsageType">
+              <parentTerm text="ttGeneralMtplBrms" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="ttGeneralMtplBrms"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </condition>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate car age multiplicator" ruleActivityUpdateStamp="_bQKc0p72Eea5aNUI0Dva3w" invokes="../Rulesheets/Calculate%20Car%20Age%20Multiplicator.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#PassengerCarNonLeaseNonTaxi"/>
+        <label expression="vehicleUsageType#PassengerCarLease"/>
+        <label expression="vehicleUsageType#PassengerCarTaxi"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#PassengerCarTaxi"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate No Car Age Multiplicator" ruleActivityUpdateStamp="_R8fWY5oyEea5aNUI0Dva3w" invokes="../Rulesheets/Calculate%20No%20Car%20Age%20Multiplicator.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#Motorcycle"/>
+        <label expression="vehicleUsageType#SmallTruck"/>
+        <label expression="vehicleUsageType#TruckNonDangerousCargo"/>
+        <label expression="vehicleUsageType#TruckDangerousCargo"/>
+        <label expression="vehicleUsageType#TruckTractorNonDangerous"/>
+        <label expression="vehicleUsageType#TruckTractorDangerous"/>
+        <label expression="vehicleUsageType#Tractor"/>
+        <label expression="vehicleUsageType#TraileNonDangerous"/>
+        <label expression="vehicleUsageType#TrailerDangerous"/>
+        <label expression="vehicleUsageType#Bus"/>
+        <label expression="vehicleUsageType#TrolleyBus"/>
+        <label expression="vehicleUsageType#Tram"/>
+        <label expression="vehicleUsageType#Moped"/>
+        <label expression="null"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="other"/>
+      </branches>
+    </flowControlList>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:BranchContainer" name="IsFuelCoefficientNeeded" order="9" ruleActivityUpdateStamp="_d6ar4byrEeafTega9vdUcg" invokes="#//@ruleflow/@flowControlList.11">
+      <condition expression="ttGeneralMtplBrms.vehicleUsageType">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ttGeneralMtplBrms.vehicleUsageType" datatype="Integer" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+          <referencedTermList>
+            <terms text="vehicleUsageType" datatype="Integer" termtype="ATTRIBUTE" fulltext="ttGeneralMtplBrms.vehicleUsageType">
+              <parentTerm text="ttGeneralMtplBrms" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="ttGeneralMtplBrms"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </condition>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Fuel Multiplier" ruleActivityUpdateStamp="_b5emI2ltEeapXdVOEygTbQ" invokes="../Rulesheets/Calculate%20Fuel%20Multiplier.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#PassengerCarNonLeaseNonTaxi"/>
+        <label expression="vehicleUsageType#PassengerCarLease"/>
+        <label expression="vehicleUsageType#PassengerCarTaxi"/>
+        <label expression="vehicleUsageType#SmallTruck"/>
+        <label expression="vehicleUsageType#TruckNonDangerousCargo"/>
+        <label expression="vehicleUsageType#TruckDangerousCargo"/>
+        <label expression="vehicleUsageType#TruckTractorNonDangerous"/>
+        <label expression="vehicleUsageType#TruckTractorDangerous"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="vehicleUsageType#TruckTractorDangerous"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calcualate No Fuel Multiplier" ruleActivityUpdateStamp="_31q9IqFFEea5aNUI0Dva3w" invokes="../Rulesheets/Calcualate%20No%20Fuel%20Multiplier.ers#//@ruleset"/>
+        <label expression="vehicleUsageType#Motorcycle"/>
+        <label expression="vehicleUsageType#Tractor"/>
+        <label expression="vehicleUsageType#TraileNonDangerous"/>
+        <label expression="vehicleUsageType#TrailerDangerous"/>
+        <label expression="vehicleUsageType#Bus"/>
+        <label expression="vehicleUsageType#TrolleyBus"/>
+        <label expression="vehicleUsageType#Tram"/>
+        <label expression="vehicleUsageType#Moped"/>
+        <label expression="null"/>
+        <viewExpressions lhs="ttGeneralMtplBrms.vehicleUsageType" rhs="other"/>
+      </branches>
+    </flowControlList>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="528" y="132" width="331" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.7" activityNode="#//@ruleflow/@flowControlList.0"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="530" y="363" width="331" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.6" activityNode="#//@ruleflow/@flowControlList.1"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="530" y="411" width="331" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.2"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="530" y="459" width="331" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" activityNode="#//@ruleflow/@flowControlList.3"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="530" y="507" width="331" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.4" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" activityNode="#//@ruleflow/@flowControlList.4"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="535" y="750" width="331" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.5" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.10" activityNode="#//@ruleflow/@flowControlList.5"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="535" y="858" width="331" height="36" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.8" activityNode="#//@ruleflow/@flowControlList.6"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="530" y="315" width="331" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.6" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.9" activityNode="#//@ruleflow/@flowControlList.7"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="528" y="78" width="331" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.7" activityNode="#//@ruleflow/@flowControlList.8"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="535" y="804" width="331" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.8" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.5" activityNode="#//@ruleflow/@flowControlList.9"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:BranchContainerShape" x="530" y="185" width="331" height="111" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.9" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.10" valid="true" branchContainer="#//@ruleflow/@flowControlList.10">
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="20" width="266" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.10/@branchEdgeList.0" activityNode="#//@ruleflow/@flowControlList.10/@branches.0/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="20" y="45" width="266" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.10/@branchEdgeList.1" activityNode="#//@ruleflow/@flowControlList.10/@branches.1/@nextStep.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.10/@flowShapeList.0" branch="#//@ruleflow/@flowControlList.10/@branches.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.10/@flowShapeList.1" branch="#//@ruleflow/@flowControlList.10/@branches.1"/>
+    </flowShapeList>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:BranchContainerShape" x="525" y="575" width="360" height="131" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.10" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.4" activityNode="#//@ruleflow/@flowControlList.11" valid="true" branchContainer="#//@ruleflow/@flowControlList.11">
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="10" y="5" width="331" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.11/@branchEdgeList.0" activityNode="#//@ruleflow/@flowControlList.11/@branches.0/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="10" y="55" width="331" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.11/@branchEdgeList.1" activityNode="#//@ruleflow/@flowControlList.11/@branches.1/@nextStep.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.11/@flowShapeList.0" branch="#//@ruleflow/@flowControlList.11/@branches.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.11/@flowShapeList.1" branch="#//@ruleflow/@flowControlList.11/@branches.1"/>
+    </flowShapeList>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.0" targetShape="#//@ruleflowViewList.0/@flowShapeList.10"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.1" targetShape="#//@ruleflowViewList.0/@flowShapeList.2"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.2" targetShape="#//@ruleflowViewList.0/@flowShapeList.3"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.3" targetShape="#//@ruleflowViewList.0/@flowShapeList.4"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.4" targetShape="#//@ruleflowViewList.0/@flowShapeList.11"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.5" targetShape="#//@ruleflowViewList.0/@flowShapeList.9"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.7" targetShape="#//@ruleflowViewList.0/@flowShapeList.1"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.8" targetShape="#//@ruleflowViewList.0/@flowShapeList.0"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.9" targetShape="#//@ruleflowViewList.0/@flowShapeList.6"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.10" targetShape="#//@ruleflowViewList.0/@flowShapeList.7"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.11" targetShape="#//@ruleflowViewList.0/@flowShapeList.5"/>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>

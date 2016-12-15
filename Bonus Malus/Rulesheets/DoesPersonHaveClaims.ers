@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_3iaP0JonEea5aNUI0Dva3w" externalChecksum="1229514692:201531363:1972018159">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_OLcURZlOEeajEKKD3xL1hA" externalChecksum="1229514692:201531363:1972018159">
   <languageCode>en_GB</languageCode>
-  <ruleset vocabularyUpdateStamp="_AWeAIJlcEeajEKKD3xL1hA" vocabulary="../../../Vocabularies/SeesamPOC.ecore#/">
-    <rule/>
+  <ruleset vocabularyUpdateStamp="_HWnncJC8EeaJMf12HEnjgA" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+    <rule>
+      <action/>
+      <action/>
+    </rule>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
-        <opaqueExpression expression="PersonKKAT.LastClaimDate.yearsBetween(today) &lt;= 5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate.yearsBetween ( today ) &lt;= 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.LastClaimDate = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="yearsBetween" datatype="Integer" termtype="METHOD" fulltext="PersonKKAT.LastClaimDate.yearsBetween">
-                <parentTerm text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
-                  <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
+              <terms text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
+                <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.LastClaimDate.yearsBetween(today)" rhs="&lt;= 5"/>
+        <viewExpressions lhs="PersonKKAT.LastClaimDate" rhs="null"/>
       </condition>
       <action>
         <opaqueExpression expression="PersonKKAT.DoesPersonHaveClaims = F">
@@ -49,18 +50,16 @@
     </rule>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
       <condition>
-        <opaqueExpression expression="PersonKKAT.LastClaimDate.yearsBetween(today) > 5">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate.yearsBetween ( today ) > 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.LastClaimDate &lt;> null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate &lt;> null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="yearsBetween" datatype="Integer" termtype="METHOD" fulltext="PersonKKAT.LastClaimDate.yearsBetween">
-                <parentTerm text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
-                  <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
+              <terms text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
+                <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
               </terms>
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.LastClaimDate.yearsBetween(today)" rhs="> 5"/>
+        <viewExpressions lhs="PersonKKAT.LastClaimDate" rhs="other"/>
       </condition>
       <action>
         <opaqueExpression expression="PersonKKAT.DoesPersonHaveClaims = T">
@@ -92,8 +91,8 @@
       </action>
     </rule>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.1">
-      <text expression="Time Multiplier is {General.MtplTimeCoef} for Last Claim Date {PersonKKAT.LastClaimDate} and {PersonKKAT.DoesPersonHaveClaims}">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Time Multiplier is  + General.MtplTimeCoef +  for Last Claim Date  + PersonKKAT.LastClaimDate +  and  + PersonKKAT.DoesPersonHaveClaims" expressiontype="BRSTATEMENT">
+      <text expression="PreTime Select 1 and {PersonKKAT.LastClaimDate} or {General.MtplTimeCoef} if {PersonKKAT.DoesPersonHaveClaims}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PreTime Select 1 and  + PersonKKAT.LastClaimDate +  or  + General.MtplTimeCoef +  if  + PersonKKAT.DoesPersonHaveClaims" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
               <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
@@ -109,25 +108,34 @@
       </text>
     </ruleStatement>
     <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.1">
-      <text expression="Last Claim Date is over 5 years ago">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Last Claim Date is over 5 years ago" expressiontype="BRSTATEMENT">
-          <referencedTermList/>
+      <text expression="PreTime Select 2 and {PersonKKAT.LastClaimDate} or {General.MtplTimeCoef} if {PersonKKAT.DoesPersonHaveClaims}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PreTime Select 2 and  + PersonKKAT.LastClaimDate +  or  + General.MtplTimeCoef +  if  + PersonKKAT.DoesPersonHaveClaims" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="DoesPersonHaveClaims" datatype="Boolean" termtype="ATTRIBUTE" fulltext="PersonKKAT.DoesPersonHaveClaims">
+              <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
+              <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
         </parserOutput>
       </text>
     </ruleStatement>
-    <logicalVariable explicit="true" entity="../../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson">
+    <logicalVariable explicit="true" entity="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson">
       <alias value="PersonKKAT"/>
-      <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/ClaimCount"/>
-      <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/LastClaimDate"/>
-      <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/DoesPersonHaveClaims"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/LastClaimDate"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/DoesPersonHaveClaims"/>
     </logicalVariable>
-    <logicalVariable explicit="true" entity="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1">
+    <logicalVariable explicit="true" entity="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1">
       <alias value="General"/>
-      <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef"/>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="18" sashWeightConditionsIf="30">
-    <actionSection rowCount="49" columnWidthFactor="0.5">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
         <expressionCell external="PersonKKAT.DoesPersonHaveClaims">
@@ -155,22 +163,21 @@
     </actionSection>
     <scopeSection>
       <rootNode>
-        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
-          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
         </children>
-        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
         </children>
       </rootNode>
     </scopeSection>
     <filterSection rowCount="50"/>
-    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="818" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+    <ruleStatementSection rowCount="59" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="734" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
         <reference external="1"/>
-        <text external="Time Multiplier is {General.MtplTimeCoef} for Last Claim Date {PersonKKAT.LastClaimDate} and {PersonKKAT.DoesPersonHaveClaims}">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Time Multiplier is  + General.MtplTimeCoef +  for Last Claim Date  + PersonKKAT.LastClaimDate +  and  + PersonKKAT.DoesPersonHaveClaims" expressiontype="BRSTATEMENT">
+        <text external="PreTime Select 1 and {PersonKKAT.LastClaimDate} or {General.MtplTimeCoef} if {PersonKKAT.DoesPersonHaveClaims}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PreTime Select 1 and  + PersonKKAT.LastClaimDate +  or  + General.MtplTimeCoef +  if  + PersonKKAT.DoesPersonHaveClaims" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
@@ -187,38 +194,49 @@
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
         <reference external="2"/>
-        <text external="Last Claim Date is over 5 years ago">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Last Claim Date is over 5 years ago" expressiontype="BRSTATEMENT">
-            <referencedTermList/>
+        <text external="PreTime Select 2 and {PersonKKAT.LastClaimDate} or {General.MtplTimeCoef} if {PersonKKAT.DoesPersonHaveClaims}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PreTime Select 2 and  + PersonKKAT.LastClaimDate +  or  + General.MtplTimeCoef +  if  + PersonKKAT.DoesPersonHaveClaims" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="DoesPersonHaveClaims" datatype="Boolean" termtype="ATTRIBUTE" fulltext="PersonKKAT.DoesPersonHaveClaims">
+                <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
+                <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
           </parserOutput>
         </text>
       </ruleStatementItemList>
     </ruleStatementSection>
-    <conditionSection rowCount="49" columnWidthFactor="0.5">
-      <conditionItemList variableMode="Literal">
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
         <valueSetCell/>
-        <expressionCell external="PersonKKAT.LastClaimDate.yearsBetween(today)">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate.yearsBetween ( today )" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="PersonKKAT.LastClaimDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate" datatype="DateTime" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="yearsBetween" datatype="Integer" termtype="METHOD" fulltext="PersonKKAT.LastClaimDate.yearsBetween">
-                <parentTerm text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
-                  <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
-                </parentTerm>
+              <terms text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
+                <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
               </terms>
             </referencedTermList>
           </parserOutput>
         </expressionCell>
       </conditionItemList>
     </conditionSection>
-    <ruleSection columnCount="19">
-      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
       <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
-        <conditionValueSetCellList valueSet="&lt;= 5"/>
+        <conditionValueSetCellList valueSet="null"/>
         <actionValueSetCellList valueSet="F"/>
         <actionValueSetCellList valueSet="1"/>
       </ruleColumnList>
       <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
-        <conditionValueSetCellList valueSet="> 5"/>
+        <conditionValueSetCellList valueSet="other"/>
         <actionValueSetCellList valueSet="T"/>
         <actionValueSetCellList valueSet="0"/>
       </ruleColumnList>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_MTaI0XM0EeaXfcBhnlmajQ" externalChecksum="1229514692:201531363:1972018159">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_BhiTMoYjEea8PrfP1C8gLA" externalChecksum="1229514692:507989954:1972018159">
   <languageCode>en_GB</languageCode>
-  <ruleset vocabularyUpdateStamp="_94gV4W9LEea11LcoQ3Ikcg" vocabulary="../../../Vocabularies/SeesamPOC.ecore#/">
+  <ruleset vocabularyUpdateStamp="_zi3AcH3gEeaS1KS4E03n7g" vocabulary="../../../Vocabularies/SeesamPOC.ecore#/">
     <rule/>
     <rule>
       <condition>
@@ -69,8 +69,8 @@
         <viewExpressions lhs="PairKKAT.PolicyYears" rhs="0..0.84"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.MtplPairCoef = 1.2075">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplPairCoef = 1.2075" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.MtplPairCoef = 1.5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplPairCoef = 1.5" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="MtplPairCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplPairCoef">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -109,8 +109,8 @@
         <viewExpressions lhs="PairKKAT.PolicyYears" rhs="0..0.84"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.MtplPairCoef = 1.6">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplPairCoef = 1.6" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.MtplPairCoef = 1.8">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplPairCoef = 1.8" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="MtplPairCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplPairCoef">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -229,8 +229,8 @@
         <viewExpressions lhs="PairKKAT.PolicyYears" rhs="0.85..1.84"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.MtplPairCoef = 1.1025">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplPairCoef = 1.1025" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.MtplPairCoef = 1.2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplPairCoef = 1.2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="MtplPairCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplPairCoef">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -3331,1686 +3331,406 @@
         </expressionCell>
       </conditionItemList>
     </conditionSection>
-    <ruleSection columnCount="81" scrollColumnLeft="76">
+    <ruleSection columnCount="81" scrollColumnLeft="4">
       <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
       <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="0..0.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 0 .. 0.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="0..0.84"/>
         <actionValueSetCellList valueSet="1.04"/>
       </ruleColumnList>
       <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="0..0.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 0 .. 0.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <actionValueSetCellList valueSet="1.2075"/>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="0..0.84"/>
+        <actionValueSetCellList valueSet="1.5"/>
       </ruleColumnList>
       <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="0..0.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 0 .. 0.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <actionValueSetCellList valueSet="1.6"/>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="0..0.84"/>
+        <actionValueSetCellList valueSet="1.8"/>
       </ruleColumnList>
       <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="0..0.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 0 .. 0.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="0..0.84"/>
         <actionValueSetCellList valueSet="2.4"/>
       </ruleColumnList>
       <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="0.85..1.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 0.85 .. 1.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="0.85..1.84"/>
         <actionValueSetCellList valueSet="0.74"/>
       </ruleColumnList>
       <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="0.85..1.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 0.85 .. 1.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <actionValueSetCellList valueSet="1.1025"/>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="0.85..1.84"/>
+        <actionValueSetCellList valueSet="1.2"/>
       </ruleColumnList>
       <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="0.85..1.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 0.85 .. 1.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="0.85..1.84"/>
         <actionValueSetCellList valueSet="1.52"/>
       </ruleColumnList>
       <ruleColumnList ruleId="8" columnWidth="100" pRule="#//@ruleset/@rules.8">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="0.85..1.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 0.85 .. 1.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="0.85..1.84"/>
         <actionValueSetCellList valueSet="2"/>
       </ruleColumnList>
       <ruleColumnList ruleId="9" columnWidth="100" pRule="#//@ruleset/@rules.9">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="1.85..2.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 1.85 .. 2.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="1.85..2.84"/>
         <actionValueSetCellList valueSet="0.7"/>
       </ruleColumnList>
       <ruleColumnList ruleId="10" columnWidth="100" pRule="#//@ruleset/@rules.10">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="1.85..2.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 1.85 .. 2.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="1.85..2.84"/>
         <actionValueSetCellList valueSet="1.05"/>
       </ruleColumnList>
       <ruleColumnList ruleId="11" columnWidth="100" pRule="#//@ruleset/@rules.11">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="1.85..2.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 1.85 .. 2.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="1.85..2.84"/>
         <actionValueSetCellList valueSet="1.4400000000000002"/>
       </ruleColumnList>
       <ruleColumnList ruleId="12" columnWidth="100" pRule="#//@ruleset/@rules.12">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="1.85..2.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 1.85 .. 2.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="1.85..2.84"/>
         <actionValueSetCellList valueSet="1.8"/>
       </ruleColumnList>
       <ruleColumnList ruleId="13" columnWidth="100" pRule="#//@ruleset/@rules.13">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="2.85..3.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 2.85 .. 3.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="2.85..3.84"/>
         <actionValueSetCellList valueSet="0.66"/>
       </ruleColumnList>
       <ruleColumnList ruleId="14" columnWidth="100" pRule="#//@ruleset/@rules.14">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="2.85..3.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 2.85 .. 3.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="2.85..3.84"/>
         <actionValueSetCellList valueSet="0.945"/>
       </ruleColumnList>
       <ruleColumnList ruleId="15" columnWidth="100" pRule="#//@ruleset/@rules.15">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="2.85..3.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 2.85 .. 3.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="2.85..3.84"/>
         <actionValueSetCellList valueSet="1.36"/>
       </ruleColumnList>
       <ruleColumnList ruleId="16" columnWidth="100" pRule="#//@ruleset/@rules.16">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="2.85..3.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 2.85 .. 3.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="2.85..3.84"/>
         <actionValueSetCellList valueSet="1.7"/>
       </ruleColumnList>
       <ruleColumnList ruleId="17" columnWidth="100" pRule="#//@ruleset/@rules.17">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="3.85..4.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 3.85 .. 4.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="3.85..4.84"/>
         <actionValueSetCellList valueSet="0.61"/>
       </ruleColumnList>
       <ruleColumnList ruleId="18" columnWidth="100" pRule="#//@ruleset/@rules.18">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="3.85..4.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 3.85 .. 4.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="3.85..4.84"/>
         <actionValueSetCellList valueSet="0.84"/>
       </ruleColumnList>
       <ruleColumnList ruleId="19" columnWidth="100" pRule="#//@ruleset/@rules.19">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="3.85..4.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 3.85 .. 4.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="3.85..4.84"/>
         <actionValueSetCellList valueSet="1.28"/>
       </ruleColumnList>
       <ruleColumnList ruleId="20" columnWidth="100" pRule="#//@ruleset/@rules.20">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="3.85..4.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 3.85 .. 4.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="3.85..4.84"/>
         <actionValueSetCellList valueSet="1.6003"/>
       </ruleColumnList>
       <ruleColumnList ruleId="21" columnWidth="100" pRule="#//@ruleset/@rules.21">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="4.85..5.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 4.85 .. 5.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="4.85..5.84"/>
         <actionValueSetCellList valueSet="0.59"/>
       </ruleColumnList>
       <ruleColumnList ruleId="22" columnWidth="100" pRule="#//@ruleset/@rules.22">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="4.85..5.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 4.85 .. 5.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="4.85..5.84"/>
         <actionValueSetCellList valueSet="0.756"/>
       </ruleColumnList>
       <ruleColumnList ruleId="23" columnWidth="100" pRule="#//@ruleset/@rules.23">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="4.85..5.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 4.85 .. 5.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="4.85..5.84"/>
         <actionValueSetCellList valueSet="1.24"/>
       </ruleColumnList>
       <ruleColumnList ruleId="24" columnWidth="100" pRule="#//@ruleset/@rules.24">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="4.85..5.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 4.85 .. 5.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="4.85..5.84"/>
         <actionValueSetCellList valueSet="1.5"/>
       </ruleColumnList>
       <ruleColumnList ruleId="25" columnWidth="100" pRule="#//@ruleset/@rules.25">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="5.85..6.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 5.85 .. 6.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="5.85..6.84"/>
         <actionValueSetCellList valueSet="0.56"/>
       </ruleColumnList>
       <ruleColumnList ruleId="26" columnWidth="100" pRule="#//@ruleset/@rules.26">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="5.85..6.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 5.85 .. 6.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="5.85..6.84"/>
         <actionValueSetCellList valueSet="0.672"/>
       </ruleColumnList>
       <ruleColumnList ruleId="27" columnWidth="100" pRule="#//@ruleset/@rules.27">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="5.85..6.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 5.85 .. 6.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="5.85..6.84"/>
         <actionValueSetCellList valueSet="1.2"/>
       </ruleColumnList>
       <ruleColumnList ruleId="28" columnWidth="100" pRule="#//@ruleset/@rules.28">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="5.85..6.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 5.85 .. 6.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="5.85..6.84"/>
         <actionValueSetCellList valueSet="1.4"/>
       </ruleColumnList>
       <ruleColumnList ruleId="29" columnWidth="100" pRule="#//@ruleset/@rules.29">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="6.85..7.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 6.85 .. 7.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="6.85..7.84"/>
         <actionValueSetCellList valueSet="0.53"/>
       </ruleColumnList>
       <ruleColumnList ruleId="30" columnWidth="100" pRule="#//@ruleset/@rules.30">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="6.85..7.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 6.85 .. 7.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="6.85..7.84"/>
         <actionValueSetCellList valueSet="0.63"/>
       </ruleColumnList>
       <ruleColumnList ruleId="31" columnWidth="100" pRule="#//@ruleset/@rules.31">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="6.85..7.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 6.85 .. 7.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="6.85..7.84"/>
         <actionValueSetCellList valueSet="1.16"/>
       </ruleColumnList>
       <ruleColumnList ruleId="32" columnWidth="100" pRule="#//@ruleset/@rules.32">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="6.85..7.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 6.85 .. 7.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="6.85..7.84"/>
         <actionValueSetCellList valueSet="1.3"/>
       </ruleColumnList>
       <ruleColumnList ruleId="33" columnWidth="100" pRule="#//@ruleset/@rules.33">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="7.85..8.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 7.85 .. 8.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="7.85..8.84"/>
         <actionValueSetCellList valueSet="0.5"/>
       </ruleColumnList>
       <ruleColumnList ruleId="34" columnWidth="100" pRule="#//@ruleset/@rules.34">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="7.85..8.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 7.85 .. 8.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="7.85..8.84"/>
         <actionValueSetCellList valueSet="0.5881"/>
       </ruleColumnList>
       <ruleColumnList ruleId="35" columnWidth="100" pRule="#//@ruleset/@rules.35">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="7.85..8.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 7.85 .. 8.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="7.85..8.84"/>
         <actionValueSetCellList valueSet="1.1199999999999999"/>
       </ruleColumnList>
       <ruleColumnList ruleId="36" columnWidth="100" pRule="#//@ruleset/@rules.36">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="7.85..8.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 7.85 .. 8.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="7.85..8.84"/>
         <actionValueSetCellList valueSet="1.25"/>
       </ruleColumnList>
       <ruleColumnList ruleId="37" columnWidth="100" pRule="#//@ruleset/@rules.37">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="8.85..9.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 8.85 .. 9.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="8.85..9.84"/>
         <actionValueSetCellList valueSet="0.47"/>
       </ruleColumnList>
       <ruleColumnList ruleId="38" columnWidth="100" pRule="#//@ruleset/@rules.38">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="8.85..9.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 8.85 .. 9.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="8.85..9.84"/>
         <actionValueSetCellList valueSet="0.546"/>
       </ruleColumnList>
       <ruleColumnList ruleId="39" columnWidth="100" pRule="#//@ruleset/@rules.39">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="8.85..9.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 8.85 .. 9.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="8.85..9.84"/>
         <actionValueSetCellList valueSet="1.0402"/>
       </ruleColumnList>
       <ruleColumnList ruleId="40" columnWidth="100" pRule="#//@ruleset/@rules.40">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="8.85..9.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 8.85 .. 9.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="8.85..9.84"/>
         <actionValueSetCellList valueSet="1.2003"/>
       </ruleColumnList>
       <ruleColumnList ruleId="41" columnWidth="100" pRule="#//@ruleset/@rules.41">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="9.85..10.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 9.85 .. 10.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="9.85..10.84"/>
         <actionValueSetCellList valueSet="0.44"/>
       </ruleColumnList>
       <ruleColumnList ruleId="42" columnWidth="100" pRule="#//@ruleset/@rules.42">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="9.85..10.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 9.85 .. 10.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="9.85..10.84"/>
         <actionValueSetCellList valueSet="0.504"/>
       </ruleColumnList>
       <ruleColumnList ruleId="43" columnWidth="100" pRule="#//@ruleset/@rules.43">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="9.85..10.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 9.85 .. 10.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="9.85..10.84"/>
         <actionValueSetCellList valueSet="1.0002"/>
       </ruleColumnList>
       <ruleColumnList ruleId="44" columnWidth="100" pRule="#//@ruleset/@rules.44">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="9.85..10.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 9.85 .. 10.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="9.85..10.84"/>
         <actionValueSetCellList valueSet="1.15"/>
       </ruleColumnList>
       <ruleColumnList ruleId="45" columnWidth="100" pRule="#//@ruleset/@rules.45">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="10.85..11.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 10.85 .. 11.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="10.85..11.84"/>
         <actionValueSetCellList valueSet="0.436"/>
       </ruleColumnList>
       <ruleColumnList ruleId="46" columnWidth="100" pRule="#//@ruleset/@rules.46">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="10.85..11.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 10.85 .. 11.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="10.85..11.84"/>
         <actionValueSetCellList valueSet="0.483"/>
       </ruleColumnList>
       <ruleColumnList ruleId="47" columnWidth="100" pRule="#//@ruleset/@rules.47">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="10.85..11.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 10.85 .. 11.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="10.85..11.84"/>
         <actionValueSetCellList valueSet="0.96"/>
       </ruleColumnList>
       <ruleColumnList ruleId="48" columnWidth="100" pRule="#//@ruleset/@rules.48">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="10.85..11.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 10.85 .. 11.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="10.85..11.84"/>
         <actionValueSetCellList valueSet="1.1"/>
       </ruleColumnList>
       <ruleColumnList ruleId="49" columnWidth="100" pRule="#//@ruleset/@rules.49">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="11.85..12.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 11.85 .. 12.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="11.85..12.84"/>
         <actionValueSetCellList valueSet="0.432"/>
       </ruleColumnList>
       <ruleColumnList ruleId="50" columnWidth="100" pRule="#//@ruleset/@rules.50">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="11.85..12.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 11.85 .. 12.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="11.85..12.84"/>
         <actionValueSetCellList valueSet="0.4621"/>
       </ruleColumnList>
       <ruleColumnList ruleId="51" columnWidth="100" pRule="#//@ruleset/@rules.51">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="11.85..12.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 11.85 .. 12.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="11.85..12.84"/>
         <actionValueSetCellList valueSet="0.8800000000000001"/>
       </ruleColumnList>
       <ruleColumnList ruleId="52" columnWidth="100" pRule="#//@ruleset/@rules.52">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="11.85..12.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 11.85 .. 12.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="11.85..12.84"/>
         <actionValueSetCellList valueSet="1.0503"/>
       </ruleColumnList>
       <ruleColumnList ruleId="53" columnWidth="100" pRule="#//@ruleset/@rules.53">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="12.85..13.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 12.85 .. 13.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="12.85..13.84"/>
         <actionValueSetCellList valueSet="0.4306"/>
       </ruleColumnList>
       <ruleColumnList ruleId="54" columnWidth="100" pRule="#//@ruleset/@rules.54">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="12.85..13.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 12.85 .. 13.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="12.85..13.84"/>
         <actionValueSetCellList valueSet="0.4416"/>
       </ruleColumnList>
       <ruleColumnList ruleId="55" columnWidth="100" pRule="#//@ruleset/@rules.55">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="12.85..13.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 12.85 .. 13.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="12.85..13.84"/>
         <actionValueSetCellList valueSet="0.8002"/>
       </ruleColumnList>
       <ruleColumnList ruleId="56" columnWidth="100" pRule="#//@ruleset/@rules.56">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="12.85..13.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 12.85 .. 13.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="12.85..13.84"/>
         <actionValueSetCellList valueSet="1.0003"/>
       </ruleColumnList>
       <ruleColumnList ruleId="57" columnWidth="100" pRule="#//@ruleset/@rules.57">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="13.85..14.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 13.85 .. 14.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="13.85..14.84"/>
         <actionValueSetCellList valueSet="0.4305"/>
       </ruleColumnList>
       <ruleColumnList ruleId="58" columnWidth="100" pRule="#//@ruleset/@rules.58">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="13.85..14.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 13.85 .. 14.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="13.85..14.84"/>
         <actionValueSetCellList valueSet="0.4415"/>
       </ruleColumnList>
       <ruleColumnList ruleId="59" columnWidth="100" pRule="#//@ruleset/@rules.59">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="13.85..14.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 13.85 .. 14.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="13.85..14.84"/>
         <actionValueSetCellList valueSet="0.7202"/>
       </ruleColumnList>
       <ruleColumnList ruleId="60" columnWidth="100" pRule="#//@ruleset/@rules.60">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="13.85..14.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 13.85 .. 14.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="13.85..14.84"/>
         <actionValueSetCellList valueSet="0.9500000000000001"/>
       </ruleColumnList>
       <ruleColumnList ruleId="61" columnWidth="100" pRule="#//@ruleset/@rules.61">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="14.85..15.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 14.85 .. 15.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="14.85..15.84"/>
         <actionValueSetCellList valueSet="0.4304"/>
       </ruleColumnList>
       <ruleColumnList ruleId="62" columnWidth="100" pRule="#//@ruleset/@rules.62">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="14.85..15.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 14.85 .. 15.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="14.85..15.84"/>
         <actionValueSetCellList valueSet="0.4414"/>
       </ruleColumnList>
       <ruleColumnList ruleId="63" columnWidth="100" pRule="#//@ruleset/@rules.63">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="14.85..15.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 14.85 .. 15.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="14.85..15.84"/>
         <actionValueSetCellList valueSet="0.6402"/>
       </ruleColumnList>
       <ruleColumnList ruleId="64" columnWidth="100" pRule="#//@ruleset/@rules.64">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="14.85..15.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 14.85 .. 15.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="14.85..15.84"/>
         <actionValueSetCellList valueSet="0.9001"/>
       </ruleColumnList>
       <ruleColumnList ruleId="65" columnWidth="100" pRule="#//@ruleset/@rules.65">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="15.85..16.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 15.85 .. 16.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="15.85..16.84"/>
         <actionValueSetCellList valueSet="0.4303"/>
       </ruleColumnList>
       <ruleColumnList ruleId="66" columnWidth="100" pRule="#//@ruleset/@rules.66">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="15.85..16.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 15.85 .. 16.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="15.85..16.84"/>
         <actionValueSetCellList valueSet="0.4413"/>
       </ruleColumnList>
       <ruleColumnList ruleId="67" columnWidth="100" pRule="#//@ruleset/@rules.67">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="15.85..16.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 15.85 .. 16.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="15.85..16.84"/>
         <actionValueSetCellList valueSet="0.5602"/>
       </ruleColumnList>
       <ruleColumnList ruleId="68" columnWidth="100" pRule="#//@ruleset/@rules.68">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="15.85..16.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 15.85 .. 16.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="15.85..16.84"/>
         <actionValueSetCellList valueSet="0.85"/>
       </ruleColumnList>
       <ruleColumnList ruleId="69" columnWidth="100" pRule="#//@ruleset/@rules.69">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="16.85..17.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 16.85 .. 17.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="16.85..17.84"/>
         <actionValueSetCellList valueSet="0.4302"/>
       </ruleColumnList>
       <ruleColumnList ruleId="70" columnWidth="100" pRule="#//@ruleset/@rules.70">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="16.85..17.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 16.85 .. 17.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="16.85..17.84"/>
         <actionValueSetCellList valueSet="0.4412"/>
       </ruleColumnList>
       <ruleColumnList ruleId="71" columnWidth="100" pRule="#//@ruleset/@rules.71">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="16.85..17.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 16.85 .. 17.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="16.85..17.84"/>
         <actionValueSetCellList valueSet="0.4802"/>
       </ruleColumnList>
       <ruleColumnList ruleId="72" columnWidth="100" pRule="#//@ruleset/@rules.72">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="16.85..17.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 16.85 .. 17.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="16.85..17.84"/>
         <actionValueSetCellList valueSet="0.8004"/>
       </ruleColumnList>
       <ruleColumnList ruleId="73" columnWidth="100" pRule="#//@ruleset/@rules.73">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="17.85..18.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 17.85 .. 18.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="17.85..18.84"/>
         <actionValueSetCellList valueSet="0.4301"/>
       </ruleColumnList>
       <ruleColumnList ruleId="74" columnWidth="100" pRule="#//@ruleset/@rules.74">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="17.85..18.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 17.85 .. 18.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet="17.85..18.84"/>
         <actionValueSetCellList valueSet="0.4411"/>
       </ruleColumnList>
       <ruleColumnList ruleId="75" columnWidth="100" pRule="#//@ruleset/@rules.75">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="17.85..18.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 17.85 .. 18.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet="17.85..18.84"/>
         <actionValueSetCellList valueSet="0.4801"/>
       </ruleColumnList>
       <ruleColumnList ruleId="76" columnWidth="100" pRule="#//@ruleset/@rules.76">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet="17.85..18.84">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears in 17.85 .. 18.84" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet="17.85..18.84"/>
         <actionValueSetCellList valueSet="0.8003"/>
       </ruleColumnList>
       <ruleColumnList ruleId="77" columnWidth="100" pRule="#//@ruleset/@rules.77">
-        <conditionValueSetCellList valueSet="0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet=">= 18.85">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears >= 18.85" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet=">= 18.85"/>
         <actionValueSetCellList valueSet="0.43"/>
       </ruleColumnList>
       <ruleColumnList ruleId="78" columnWidth="100" pRule="#//@ruleset/@rules.78">
-        <conditionValueSetCellList valueSet="1">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet=">= 18.85">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears >= 18.85" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="1"/>
+        <conditionValueSetCellList valueSet=">= 18.85"/>
         <actionValueSetCellList valueSet="0.441"/>
       </ruleColumnList>
       <ruleColumnList ruleId="79" columnWidth="100" pRule="#//@ruleset/@rules.79">
-        <conditionValueSetCellList valueSet="2">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet=">= 18.85">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears >= 18.85" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="2"/>
+        <conditionValueSetCellList valueSet=">= 18.85"/>
         <actionValueSetCellList valueSet="0.48"/>
       </ruleColumnList>
       <ruleColumnList ruleId="80" columnWidth="100" pRule="#//@ruleset/@rules.80">
-        <conditionValueSetCellList valueSet=">= 3">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.ClaimCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PairKKAT.ClaimCount">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
-        <conditionValueSetCellList valueSet=">= 18.85">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PairKKAT.PolicyYears >= 18.85" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PairKKAT.PolicyYears">
-                <parentTerm text="PairKKAT" datatype="ttBM2KkatPair" termtype="ENTITY" fulltext="PairKKAT"/>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3"/>
+        <conditionValueSetCellList valueSet=">= 18.85"/>
         <actionValueSetCellList valueSet="0.8"/>
       </ruleColumnList>
     </ruleSection>

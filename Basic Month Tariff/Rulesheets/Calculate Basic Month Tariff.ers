@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_IdpfkGltEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_oLR5oqTvEeaLOcgviUOl8Q" externalChecksum="1229514692:201531363:1972018159">
   <languageCode>en_GB</languageCode>
-  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+  <ruleset vocabularyUpdateStamp="_RfAnwKTIEeaLOcgviUOl8Q" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
     <rule>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
         <opaqueExpression expression="General.resultTariffPrice = General.aRiskTariffMultiplier*&#xD;&#xA;General.BMMultiplier*&#xD;&#xA;General.carAgeMultiplier*&#xD;&#xA;General.carMakeModelMultiplier*&#xD;&#xA;General.customerSegmentMultiplier*&#xD;&#xA;General.fuelMultiplier*&#xD;&#xA;General.MTPLAgreementMultiplier*&#xD;&#xA;General.ownerRegNrMultiplier*&#xD;&#xA;General.personAgeMultiplier*&#xD;&#xA;General.personTypeMultiplier*&#xD;&#xA;General.salesAgreementMultiplier">
@@ -235,10 +235,11 @@
       <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/salesAgreementMultiplier"/>
       <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personTypeMultiplier"/>
       <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personAgeMultiplier"/>
+      <referencedAttributes attribute="../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/PassengerLegalMultiplier"/>
     </logicalVariable>
   </ruleset>
   <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="35">
-    <actionSection rowCount="50" scrollRowTop="1" columnWidthFactor="0.5">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList rowHeight="205">
         <valueSetCell/>
         <expressionCell external="General.resultTariffPrice">
@@ -358,6 +359,7 @@
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.16"/>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.17"/>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.18"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.19"/>
         </children>
       </rootNode>
     </scopeSection>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_fE8VMnM0EeaXfcBhnlmajQ" externalChecksum="1229514692:201531363:1972018159">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_JAnJMqT2EeaLOcgviUOl8Q" externalChecksum="1229514692:201531363:1972018159">
   <languageCode>en_GB</languageCode>
-  <ruleset vocabularyUpdateStamp="_94gV4W9LEea11LcoQ3Ikcg" vocabulary="../../../Vocabularies/SeesamPOC.ecore#/">
+  <ruleset vocabularyUpdateStamp="_RfAnwKTIEeaLOcgviUOl8Q" vocabulary="../../../Vocabularies/SeesamPOC.ecore#/">
     <rule/>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
         <opaqueExpression expression="PersonKKAT.LastClaimDate.yearsBetween(today) &lt;= 10">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate.yearsBetween ( today ) &lt;= 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -18,7 +18,19 @@
         </opaqueExpression>
         <viewExpressions lhs="PersonKKAT.LastClaimDate.yearsBetween(today)" rhs="&lt;= 10"/>
       </condition>
-      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(General.personIsCorporation)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( General.personIsCorporation ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personIsCorporation" rhs="T"/>
+      </condition>
+      <action>
         <opaqueExpression expression="General.MtplTimeCoef = 1-(1-General.MtplTimeCoef)/4">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplTimeCoef = 1 - ( 1 - General.MtplTimeCoef ) / 4" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
@@ -36,7 +48,7 @@
         </opaqueExpression>
       </action>
     </rule>
-    <rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
       <condition>
         <opaqueExpression expression="PersonKKAT.LastClaimDate.yearsBetween(today) > 10">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate.yearsBetween ( today ) > 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
@@ -51,7 +63,19 @@
         </opaqueExpression>
         <viewExpressions lhs="PersonKKAT.LastClaimDate.yearsBetween(today)" rhs="> 10"/>
       </condition>
-      <action documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(General.personIsCorporation)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( General.personIsCorporation ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personIsCorporation" rhs="T"/>
+      </condition>
+      <action>
         <opaqueExpression expression="General.MtplTimeCoef = 1-(1-General.MtplTimeCoef)/2">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplTimeCoef = 1 - ( 1 - General.MtplTimeCoef ) / 2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
@@ -69,9 +93,99 @@
         </opaqueExpression>
       </action>
     </rule>
-    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1/@actions.0" logicalVariable="#//@ruleset/@logicalVariables.1">
-      <text expression="Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/4&quot; for calculation, since Last Claim Date is less than 10 years ago">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/4 + \&quot; +  for calculation, since Last Claim Date is less than 10 years ago" expressiontype="BRSTATEMENT">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="PersonKKAT.LastClaimDate.yearsBetween(today) &lt;= 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate.yearsBetween ( today ) &lt;= 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="yearsBetween" datatype="Integer" termtype="METHOD" fulltext="PersonKKAT.LastClaimDate.yearsBetween">
+                <parentTerm text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
+                  <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="PersonKKAT.LastClaimDate.yearsBetween(today)" rhs="&lt;= 10"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(General.personIsCorporation)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( General.personIsCorporation ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personIsCorporation" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.MtplTimeCoef = 1-(1-General.MtplTimeCoef)/2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplTimeCoef = 1 - ( 1 - General.MtplTimeCoef ) / 2" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition>
+        <opaqueExpression expression="PersonKKAT.LastClaimDate.yearsBetween(today) > 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate.yearsBetween ( today ) > 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="yearsBetween" datatype="Integer" termtype="METHOD" fulltext="PersonKKAT.LastClaimDate.yearsBetween">
+                <parentTerm text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
+                  <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="PersonKKAT.LastClaimDate.yearsBetween(today)" rhs="> 10"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(General.personIsCorporation)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( General.personIsCorporation ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="General.personIsCorporation" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="General.MtplTimeCoef = 1-(1-General.MtplTimeCoef)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplTimeCoef = 1 - ( 1 - General.MtplTimeCoef )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="Corp Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/4&quot; for calculation, since Last Claim Date is less than 10 years ago">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Corp Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/4 + \&quot; +  for calculation, since Last Claim Date is less than 10 years ago" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
               <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
@@ -80,9 +194,31 @@
         </parserOutput>
       </text>
     </ruleStatement>
-    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2/@actions.0" logicalVariable="#//@ruleset/@logicalVariables.1">
-      <text expression="Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/2&quot; for calculation, since Last Claim Date is more than 10 years ago">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/2 + \&quot; +  for calculation, since Last Claim Date is more than 10 years ago" expressiontype="BRSTATEMENT">
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="Corp Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/2&quot; for calculation, since Last Claim Date is more than 10 years ago">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Corp Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/2 + \&quot; +  for calculation, since Last Claim Date is more than 10 years ago" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="Private Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/4&quot; for calculation, since Last Claim Date is less than 10 years ago">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Private Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/4 + \&quot; +  for calculation, since Last Claim Date is less than 10 years ago" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+              <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.1">
+      <text expression="Private Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/2&quot; for calculation, since Last Claim Date is more than 10 years ago">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Private Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/2 + \&quot; +  for calculation, since Last Claim Date is more than 10 years ago" expressiontype="BRSTATEMENT">
           <referencedTermList>
             <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
               <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
@@ -95,12 +231,13 @@
       <alias value="PersonKKAT"/>
       <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttBM2KkatPerson/LastClaimDate"/>
     </logicalVariable>
-    <logicalVariable explicit="true" entity="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1">
+    <logicalVariable explicit="true" entity="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3">
       <alias value="General"/>
       <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef"/>
+      <referencedAttributes attribute="../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/personIsCorporation"/>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="30">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="23">
     <actionSection rowCount="50" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
@@ -122,15 +259,16 @@
         </children>
         <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
         </children>
       </rootNode>
     </scopeSection>
     <filterSection rowCount="50"/>
-    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="562" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
-        <reference external="A1"/>
-        <text external="Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/4&quot; for calculation, since Last Claim Date is less than 10 years ago">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/4 + \&quot; +  for calculation, since Last Claim Date is less than 10 years ago" expressiontype="BRSTATEMENT">
+        <reference external="1"/>
+        <text external="Corp Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/4&quot; for calculation, since Last Claim Date is less than 10 years ago">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Corp Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/4 + \&quot; +  for calculation, since Last Claim Date is less than 10 years ago" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
@@ -140,9 +278,33 @@
         </text>
       </ruleStatementItemList>
       <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
-        <reference external="A2"/>
-        <text external="Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/2&quot; for calculation, since Last Claim Date is more than 10 years ago">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/2 + \&quot; +  for calculation, since Last Claim Date is more than 10 years ago" expressiontype="BRSTATEMENT">
+        <reference external="2"/>
+        <text external="Corp Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/2&quot; for calculation, since Last Claim Date is more than 10 years ago">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Corp Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/2 + \&quot; +  for calculation, since Last Claim Date is more than 10 years ago" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="Private Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/4&quot; for calculation, since Last Claim Date is less than 10 years ago">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Private Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/4 + \&quot; +  for calculation, since Last Claim Date is less than 10 years ago" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="Private Time Coeficient is {General.MtplTimeCoef}, used &quot;1-(1-ratio)/2&quot; for calculation, since Last Claim Date is more than 10 years ago">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Private Time Coeficient is  + General.MtplTimeCoef + , used  + \&quot; + 1-(1-ratio)/2 + \&quot; +  for calculation, since Last Claim Date is more than 10 years ago" expressiontype="BRSTATEMENT">
             <referencedTermList>
               <terms text="MtplTimeCoef" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
@@ -167,36 +329,40 @@
           </parserOutput>
         </expressionCell>
       </conditionItemList>
-    </conditionSection>
-    <ruleSection columnCount="20">
-      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
-      <ruleColumnList ruleId="1" columnWidth="452" pRule="#//@ruleset/@rules.1">
-        <conditionValueSetCellList valueSet="&lt;= 10">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate.yearsBetween ( today ) &lt;= 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell/>
+        <expressionCell external="General.personIsCorporation">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.personIsCorporation" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="yearsBetween" datatype="Integer" termtype="METHOD" fulltext="PersonKKAT.LastClaimDate.yearsBetween">
-                <parentTerm text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
-                  <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT"/>
-                </parentTerm>
+              <terms text="personIsCorporation" datatype="Boolean" termtype="ATTRIBUTE" fulltext="General.personIsCorporation">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
               </terms>
             </referencedTermList>
           </parserOutput>
-        </conditionValueSetCellList>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20" scrollColumnLeft="1">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="174" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="&lt;= 10"/>
+        <conditionValueSetCellList valueSet="T"/>
         <actionValueSetCellList valueSet="1-(1-General.MtplTimeCoef)/4"/>
       </ruleColumnList>
-      <ruleColumnList ruleId="2" columnWidth="307" pRule="#//@ruleset/@rules.2">
-        <conditionValueSetCellList valueSet="> 10">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.LastClaimDate.yearsBetween ( today ) > 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
-            <referencedTermList>
-              <terms text="yearsBetween" datatype="Integer" termtype="METHOD" fulltext="PersonKKAT.LastClaimDate.yearsBetween">
-                <parentTerm text="LastClaimDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="PersonKKAT.LastClaimDate">
-                  <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT"/>
-                </parentTerm>
-              </terms>
-            </referencedTermList>
-          </parserOutput>
-        </conditionValueSetCellList>
+      <ruleColumnList ruleId="2" columnWidth="173" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="> 10"/>
+        <conditionValueSetCellList valueSet="T"/>
         <actionValueSetCellList valueSet="1-(1-General.MtplTimeCoef)/2"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="179" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="&lt;= 10"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="1-(1-General.MtplTimeCoef)/2"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="176" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="> 10"/>
+        <conditionValueSetCellList valueSet="F"/>
+        <actionValueSetCellList valueSet="1-(1-General.MtplTimeCoef)"/>
       </ruleColumnList>
     </ruleSection>
   </rulesheetViewList>

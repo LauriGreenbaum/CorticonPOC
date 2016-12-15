@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_qOXLkWluEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_LyhlApliEeajEKKD3xL1hA" externalChecksum="1229514692:201531363:1972018159">
   <languageCode>en_GB</languageCode>
-  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../../../Vocabularies/SeesamPOC.ecore#/">
+  <ruleset vocabularyUpdateStamp="_AWeAIJlcEeajEKKD3xL1hA" vocabulary="../../../../Vocabularies/SeesamPOC.ecore#/">
     <rule/>
     <rule>
       <condition>
-        <opaqueExpression expression="PersonKKAT.ClaimCount = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.ClaimCount &lt;= 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount &lt;= 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PersonKKAT.ClaimCount">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -14,11 +14,11 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="0"/>
+        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="&lt;= 0"/>
       </condition>
       <condition>
-        <opaqueExpression expression="PersonKKAT.PolicyYears in [0..5)">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.PolicyYears in [ 0 .. 5 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.PolicyYears &lt; 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.PolicyYears &lt; 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PersonKKAT.PolicyYears">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -26,7 +26,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.PolicyYears" rhs="[0..5)"/>
+        <viewExpressions lhs="PersonKKAT.PolicyYears" rhs="&lt; 5"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
         <opaqueExpression expression="General.MtplTimeCoef_1 = 1">
@@ -57,8 +57,8 @@
         <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="1"/>
       </condition>
       <condition>
-        <opaqueExpression expression="PersonKKAT.PolicyYears in [0..5)">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.PolicyYears in [ 0 .. 5 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.PolicyYears &lt; 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.PolicyYears &lt; 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PersonKKAT.PolicyYears">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -66,7 +66,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.PolicyYears" rhs="[0..5)"/>
+        <viewExpressions lhs="PersonKKAT.PolicyYears" rhs="&lt; 5"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
         <opaqueExpression expression="General.MtplTimeCoef_1 = 1.15">
@@ -97,8 +97,8 @@
         <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="2"/>
       </condition>
       <condition>
-        <opaqueExpression expression="PersonKKAT.PolicyYears in [0..5)">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.PolicyYears in [ 0 .. 5 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.PolicyYears &lt; 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.PolicyYears &lt; 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PersonKKAT.PolicyYears">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -106,7 +106,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.PolicyYears" rhs="[0..5)"/>
+        <viewExpressions lhs="PersonKKAT.PolicyYears" rhs="&lt; 5"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
         <opaqueExpression expression="General.MtplTimeCoef_1 = 1.4">
@@ -137,8 +137,8 @@
         <viewExpressions lhs="PersonKKAT.ClaimCount" rhs=">= 3"/>
       </condition>
       <condition>
-        <opaqueExpression expression="PersonKKAT.PolicyYears in [0..5)">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.PolicyYears in [ 0 .. 5 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.PolicyYears &lt; 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.PolicyYears &lt; 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PersonKKAT.PolicyYears">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -146,7 +146,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.PolicyYears" rhs="[0..5)"/>
+        <viewExpressions lhs="PersonKKAT.PolicyYears" rhs="&lt; 5"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
         <opaqueExpression expression="General.MtplTimeCoef_1 = 2">
@@ -165,8 +165,8 @@
     </rule>
     <rule>
       <condition>
-        <opaqueExpression expression="PersonKKAT.ClaimCount = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.ClaimCount &lt;= 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount &lt;= 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PersonKKAT.ClaimCount">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -174,7 +174,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="0"/>
+        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="&lt;= 0"/>
       </condition>
       <condition>
         <opaqueExpression expression="PersonKKAT.PolicyYears in [5..10)">
@@ -325,8 +325,8 @@
     </rule>
     <rule>
       <condition>
-        <opaqueExpression expression="PersonKKAT.ClaimCount = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.ClaimCount &lt;= 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount &lt;= 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PersonKKAT.ClaimCount">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -334,7 +334,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="0"/>
+        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="&lt;= 0"/>
       </condition>
       <condition>
         <opaqueExpression expression="PersonKKAT.PolicyYears in [10..15)">
@@ -485,8 +485,8 @@
     </rule>
     <rule>
       <condition>
-        <opaqueExpression expression="PersonKKAT.ClaimCount = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.ClaimCount &lt;= 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount &lt;= 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PersonKKAT.ClaimCount">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -494,7 +494,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="0"/>
+        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="&lt;= 0"/>
       </condition>
       <condition>
         <opaqueExpression expression="PersonKKAT.PolicyYears in [15..20)">
@@ -645,8 +645,8 @@
     </rule>
     <rule>
       <condition>
-        <opaqueExpression expression="PersonKKAT.ClaimCount = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.ClaimCount &lt;= 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount &lt;= 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PersonKKAT.ClaimCount">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -654,7 +654,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="0"/>
+        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="&lt;= 0"/>
       </condition>
       <condition>
         <opaqueExpression expression="PersonKKAT.PolicyYears in [20..25)">
@@ -805,8 +805,8 @@
     </rule>
     <rule>
       <condition>
-        <opaqueExpression expression="PersonKKAT.ClaimCount = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.ClaimCount &lt;= 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount &lt;= 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PersonKKAT.ClaimCount">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -814,7 +814,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="0"/>
+        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="&lt;= 0"/>
       </condition>
       <condition>
         <opaqueExpression expression="PersonKKAT.PolicyYears in [25..30)">
@@ -965,8 +965,8 @@
     </rule>
     <rule>
       <condition>
-        <opaqueExpression expression="PersonKKAT.ClaimCount = 0">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <opaqueExpression expression="PersonKKAT.ClaimCount &lt;= 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.ClaimCount &lt;= 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="ClaimCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="PersonKKAT.ClaimCount">
                 <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
@@ -974,7 +974,7 @@
             </referencedTermList>
           </parserOutput>
         </opaqueExpression>
-        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="0"/>
+        <viewExpressions lhs="PersonKKAT.ClaimCount" rhs="&lt;= 0"/>
       </condition>
       <condition>
         <opaqueExpression expression="PersonKKAT.PolicyYears in 30..35">
@@ -1123,9 +1123,38 @@
         </opaqueExpression>
       </action>
     </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="PersonKKAT.PolicyYears > 35">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="PersonKKAT.PolicyYears > 35" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="PolicyYears" datatype="Decimal" termtype="ATTRIBUTE" fulltext="PersonKKAT.PolicyYears">
+                <parentTerm text="PersonKKAT" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="PersonKKAT" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="PersonKKAT.PolicyYears" rhs="> 35"/>
+      </condition>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="General.MtplTimeCoef_1 = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplTimeCoef_1 = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="MtplTimeCoef_1" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef_1">
+                <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
     <filter logicalVariables="#//@ruleset/@logicalVariables.1">
-      <opaqueExpression expression="General.MtplTimeCoef_1=null">
-        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplTimeCoef_1 = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+      <opaqueExpression expression="General.MtplTimeCoef_1=0">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplTimeCoef_1 = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
           <referencedTermList>
             <terms text="MtplTimeCoef_1" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef_1">
               <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
@@ -1134,7 +1163,7 @@
         </parserOutput>
       </opaqueExpression>
     </filter>
-    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1/@actions.0 #//@ruleset/@rules.2/@actions.0 #//@ruleset/@rules.3/@actions.0 #//@ruleset/@rules.4/@actions.0 #//@ruleset/@rules.5/@actions.0 #//@ruleset/@rules.6/@actions.0 #//@ruleset/@rules.7/@actions.0 #//@ruleset/@rules.8/@actions.0 #//@ruleset/@rules.9/@actions.0 #//@ruleset/@rules.10/@actions.0 #//@ruleset/@rules.11/@actions.0 #//@ruleset/@rules.12/@actions.0 #//@ruleset/@rules.13/@actions.0 #//@ruleset/@rules.14/@actions.0 #//@ruleset/@rules.15/@actions.0 #//@ruleset/@rules.16/@actions.0 #//@ruleset/@rules.17/@actions.0 #//@ruleset/@rules.18/@actions.0 #//@ruleset/@rules.19/@actions.0 #//@ruleset/@rules.20/@actions.0 #//@ruleset/@rules.21/@actions.0 #//@ruleset/@rules.22/@actions.0 #//@ruleset/@rules.23/@actions.0 #//@ruleset/@rules.24/@actions.0 #//@ruleset/@rules.25/@actions.0 #//@ruleset/@rules.26/@actions.0 #//@ruleset/@rules.27/@actions.0 #//@ruleset/@rules.28/@actions.0">
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1/@actions.0 #//@ruleset/@rules.2/@actions.0 #//@ruleset/@rules.3/@actions.0 #//@ruleset/@rules.4/@actions.0 #//@ruleset/@rules.5/@actions.0 #//@ruleset/@rules.6/@actions.0 #//@ruleset/@rules.7/@actions.0 #//@ruleset/@rules.8/@actions.0 #//@ruleset/@rules.9/@actions.0 #//@ruleset/@rules.10/@actions.0 #//@ruleset/@rules.11/@actions.0 #//@ruleset/@rules.12/@actions.0 #//@ruleset/@rules.13/@actions.0 #//@ruleset/@rules.14/@actions.0 #//@ruleset/@rules.15/@actions.0 #//@ruleset/@rules.16/@actions.0 #//@ruleset/@rules.17/@actions.0 #//@ruleset/@rules.18/@actions.0 #//@ruleset/@rules.19/@actions.0 #//@ruleset/@rules.20/@actions.0 #//@ruleset/@rules.21/@actions.0 #//@ruleset/@rules.22/@actions.0 #//@ruleset/@rules.23/@actions.0 #//@ruleset/@rules.24/@actions.0 #//@ruleset/@rules.25/@actions.0 #//@ruleset/@rules.26/@actions.0 #//@ruleset/@rules.27/@actions.0 #//@ruleset/@rules.28/@actions.0 #//@ruleset/@rules.29/@actions.0">
       <text expression="Corporate Person Time Multiplier for Input C is {General.MtplTimeCoef_1}, for Claim Count {PersonKKAT.ClaimCount} and Policy Years {PersonKKAT.PolicyYears}">
         <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Corporate Person Time Multiplier for Input C is  + General.MtplTimeCoef_1 + , for Claim Count  + PersonKKAT.ClaimCount +  and Policy Years  + PersonKKAT.PolicyYears" expressiontype="BRSTATEMENT">
           <referencedTermList>
@@ -1159,10 +1188,12 @@
     <logicalVariable explicit="true" entity="../../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms" filters="#//@ruleset/@filters.0">
       <alias value="General"/>
       <referencedAttributes attribute="../../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplTimeCoef_1"/>
+      <referencedAttributes attribute="../../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplPersonCoefIntermed"/>
+      <referencedAttributes attribute="../../../../Vocabularies/SeesamPOC.ecore#//ttGeneralMtplBrms/MtplPersonCoef"/>
     </logicalVariable>
   </ruleset>
   <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true">
-    <actionSection rowCount="50" columnWidthFactor="0.5">
+    <actionSection rowCount="48" columnWidthFactor="0.5">
       <actionItemList>
         <valueSetCell/>
         <expressionCell external="General.MtplTimeCoef_1">
@@ -1184,16 +1215,18 @@
         </children>
         <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
-            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="General.MtplTimeCoef_1=null" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="General.MtplTimeCoef_1=0" filter="#//@ruleset/@filters.0"/>
           </children>
           <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
         </children>
       </rootNode>
     </scopeSection>
     <filterSection rowCount="50">
       <filterItemList filter="#//@ruleset/@filters.0">
-        <expressionCell external="General.MtplTimeCoef_1=null">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplTimeCoef_1 = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+        <expressionCell external="General.MtplTimeCoef_1=0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.MtplTimeCoef_1 = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
               <terms text="MtplTimeCoef_1" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.MtplTimeCoef_1">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General" variable="#//@ruleset/@logicalVariables.1"/>
@@ -1223,7 +1256,7 @@
         </text>
       </ruleStatementItemList>
     </ruleStatementSection>
-    <conditionSection rowCount="50" columnWidthFactor="0.5">
+    <conditionSection rowCount="47" columnWidthFactor="0.5">
       <conditionItemList variableMode="Literal">
         <valueSetCell/>
         <expressionCell external="PersonKKAT.ClaimCount">
@@ -1249,30 +1282,30 @@
         </expressionCell>
       </conditionItemList>
     </conditionSection>
-    <ruleSection columnCount="31" scrollColumnLeft="26">
+    <ruleSection columnCount="31">
       <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
       <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
-        <conditionValueSetCellList valueSet="0"/>
-        <conditionValueSetCellList valueSet="[0..5)"/>
+        <conditionValueSetCellList valueSet="&lt;= 0"/>
+        <conditionValueSetCellList valueSet="&lt; 5"/>
         <actionValueSetCellList valueSet="1"/>
       </ruleColumnList>
       <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
         <conditionValueSetCellList valueSet="1"/>
-        <conditionValueSetCellList valueSet="[0..5)"/>
+        <conditionValueSetCellList valueSet="&lt; 5"/>
         <actionValueSetCellList valueSet="1.15"/>
       </ruleColumnList>
       <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
         <conditionValueSetCellList valueSet="2"/>
-        <conditionValueSetCellList valueSet="[0..5)"/>
+        <conditionValueSetCellList valueSet="&lt; 5"/>
         <actionValueSetCellList valueSet="1.4"/>
       </ruleColumnList>
       <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
         <conditionValueSetCellList valueSet=">= 3"/>
-        <conditionValueSetCellList valueSet="[0..5)"/>
+        <conditionValueSetCellList valueSet="&lt; 5"/>
         <actionValueSetCellList valueSet="2"/>
       </ruleColumnList>
       <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
-        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="&lt;= 0"/>
         <conditionValueSetCellList valueSet="[5..10)"/>
         <actionValueSetCellList valueSet="0.9"/>
       </ruleColumnList>
@@ -1292,7 +1325,7 @@
         <actionValueSetCellList valueSet="1.8"/>
       </ruleColumnList>
       <ruleColumnList ruleId="9" columnWidth="100" pRule="#//@ruleset/@rules.9">
-        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="&lt;= 0"/>
         <conditionValueSetCellList valueSet="[10..15)"/>
         <actionValueSetCellList valueSet="0.8"/>
       </ruleColumnList>
@@ -1312,7 +1345,7 @@
         <actionValueSetCellList valueSet="1.6"/>
       </ruleColumnList>
       <ruleColumnList ruleId="13" columnWidth="100" pRule="#//@ruleset/@rules.13">
-        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="&lt;= 0"/>
         <conditionValueSetCellList valueSet="[15..20)"/>
         <actionValueSetCellList valueSet="0.7"/>
       </ruleColumnList>
@@ -1332,7 +1365,7 @@
         <actionValueSetCellList valueSet="1.4001"/>
       </ruleColumnList>
       <ruleColumnList ruleId="17" columnWidth="100" pRule="#//@ruleset/@rules.17">
-        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="&lt;= 0"/>
         <conditionValueSetCellList valueSet="[20..25)"/>
         <actionValueSetCellList valueSet="0.6"/>
       </ruleColumnList>
@@ -1352,7 +1385,7 @@
         <actionValueSetCellList valueSet="1.2001"/>
       </ruleColumnList>
       <ruleColumnList ruleId="21" columnWidth="100" pRule="#//@ruleset/@rules.21">
-        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="&lt;= 0"/>
         <conditionValueSetCellList valueSet="[25..30)"/>
         <actionValueSetCellList valueSet="0.5001"/>
       </ruleColumnList>
@@ -1372,7 +1405,7 @@
         <actionValueSetCellList valueSet="1.0004"/>
       </ruleColumnList>
       <ruleColumnList ruleId="25" columnWidth="100" pRule="#//@ruleset/@rules.25">
-        <conditionValueSetCellList valueSet="0"/>
+        <conditionValueSetCellList valueSet="&lt;= 0"/>
         <conditionValueSetCellList valueSet="30..35"/>
         <actionValueSetCellList valueSet="0.5"/>
       </ruleColumnList>
@@ -1390,6 +1423,11 @@
         <conditionValueSetCellList valueSet=">= 3"/>
         <conditionValueSetCellList valueSet="30..35"/>
         <actionValueSetCellList valueSet="1.0003"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="29" columnWidth="100" pRule="#//@ruleset/@rules.29">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="> 35"/>
+        <actionValueSetCellList valueSet="0"/>
       </ruleColumnList>
     </ruleSection>
   </rulesheetViewList>

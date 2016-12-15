@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" minorServiceNumber="7" buildNumber="6096" updateStamp="_NU9G4Dw1Eeae3J3VwmuqAQ" externalChecksum="1229514692:201531363:1972018159" rulesheetAssets="../Rulesheets/Calculate%20Foreign%20Multiplier.ers#/ ../Rulesheets/Calculate%20Bonus%20Malus%20Multiplier.ers#/" ruleflowAssets="Calculate%20Person-Vehicle%20Pair%20Multiplier.erf#/ Calculate%20Person%20Multiplier.erf#/ Calculate%20Time%20Multiplier.erf#/">
-  <ruleflow majorVersion="1" vocabularyUpdateStamp="_FI_eICZUEeaSqogwHP_gAw" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_KAGCgKTxEeaLOcgviUOl8Q" externalChecksum="1229514692:201531363:1972018159" rulesheetAssets="../Rulesheets/Calculate%20Foreign%20Multiplier.ers#/ ../Rulesheets/Calculate%20Bonus%20Malus%20Multiplier.ers#/ ../Rulesheets/DoesPersonHaveClaims.ers#/ ../Rulesheets/Calculate%20Time%20Multiplier/Set%20Time%20Multiplier%20as%201.ers#/ ../Rulesheets/SetMinimumBonusMalus.ers#/" ruleflowAssets="Calculate%20Person-Vehicle%20Pair%20Multiplier.erf#/ Calculate%20Person%20Multiplier.erf#/ Calculate%20Time%20Multiplier.erf#/">
+  <ruleflow majorVersion="1" vocabularyUpdateStamp="_RfAnwKTIEeaLOcgviUOl8Q" vocabulary="../../Vocabularies/SeesamPOC.ecore#/">
     <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person-Vehicle Pair Multiplier" order="1" ruleActivityUpdateStamp="_g3xAYCZWEeaSqogwHP_gAw" invokes="Calculate%20Person-Vehicle%20Pair%20Multiplier.erf#//@ruleflow"/>
-    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person Multiplier" order="2" ruleActivityUpdateStamp="_X66E0DwoEeaEiZXgYubxtg" invokes="Calculate%20Person%20Multiplier.erf#//@ruleflow"/>
-    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Time Multiplier" order="3" ruleActivityUpdateStamp="_HprQoS1DEea1QsROZQKpUQ" invokes="Calculate%20Time%20Multiplier.erf#//@ruleflow"/>
-    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Foreign Multiplier" order="4" ruleActivityUpdateStamp="_PqulUzuOEeaEiZXgYubxtg" invokes="../Rulesheets/Calculate%20Foreign%20Multiplier.ers#//@ruleset"/>
-    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Bonus Malus Multiplier" order="5" ruleActivityUpdateStamp="_JBrT0zw1Eeae3J3VwmuqAQ" invokes="../Rulesheets/Calculate%20Bonus%20Malus%20Multiplier.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Person Multiplier" order="2" ruleActivityUpdateStamp="_cxw8EJlcEeajEKKD3xL1hA" invokes="Calculate%20Person%20Multiplier.erf#//@ruleflow"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Foreign Multiplier" order="5" ruleActivityUpdateStamp="_uArxMnMzEeaXfcBhnlmajQ" invokes="../Rulesheets/Calculate%20Foreign%20Multiplier.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Bonus Malus Multiplier" order="6" ruleActivityUpdateStamp="_ncceApnIEea5aNUI0Dva3w" invokes="../Rulesheets/Calculate%20Bonus%20Malus%20Multiplier.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="DoesPersonHaveClaims" order="3" ruleActivityUpdateStamp="_OLcURZlOEeajEKKD3xL1hA" invokes="../Rulesheets/DoesPersonHaveClaims.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:BranchContainer" name="IsTimeMultiplierNeeded" order="4" ruleActivityUpdateStamp="_KAGCgKTxEeaLOcgviUOl8Q" invokes="#//@ruleflow/@flowControlList.5">
+      <condition expression="ttBM2KkatPerson.DoesPersonHaveClaims">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ttBM2KkatPerson.DoesPersonHaveClaims" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="DoesPersonHaveClaims" datatype="Boolean" termtype="ATTRIBUTE" fulltext="ttBM2KkatPerson.DoesPersonHaveClaims">
+              <parentTerm text="ttBM2KkatPerson" datatype="ttBM2KkatPerson" termtype="ENTITY" fulltext="ttBM2KkatPerson"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </condition>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Calculate Time Multiplier" ruleActivityUpdateStamp="_KAr4YKTxEeaLOcgviUOl8Q" invokes="Calculate%20Time%20Multiplier.erf#//@ruleflow"/>
+        <label expression="true"/>
+        <viewExpressions lhs="ttBM2KkatPerson.DoesPersonHaveClaims" rhs="true"/>
+      </branches>
+      <branches>
+        <nextStep xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Set Time Multiplier as 1" ruleActivityUpdateStamp="_7mNmA5LgEeaw1O1iJlxmRQ" invokes="../Rulesheets/Calculate%20Time%20Multiplier/Set%20Time%20Multiplier%20as%201.ers#//@ruleset"/>
+        <label expression="false"/>
+        <viewExpressions lhs="ttBM2KkatPerson.DoesPersonHaveClaims" rhs="false"/>
+      </branches>
+    </flowControlList>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="SetMinimumBonusMalus" order="7" ruleActivityUpdateStamp="_qMOxhJoqEea5aNUI0Dva3w" invokes="../Rulesheets/SetMinimumBonusMalus.ers#//@ruleset"/>
   </ruleflow>
   <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
-    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="384" y="48" width="319" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0"/>
-    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="384" y="102" width="319" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.1"/>
-    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="384" y="150" width="319" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.2"/>
-    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="384" y="204" width="319" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" activityNode="#//@ruleflow/@flowControlList.3"/>
-    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="384" y="264" width="319" height="36" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" activityNode="#//@ruleflow/@flowControlList.4"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="5" width="319" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="60" width="319" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.1"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="310" width="319" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.5" activityNode="#//@ruleflow/@flowControlList.2"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="357" width="319" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" activityNode="#//@ruleflow/@flowControlList.3"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="65" y="110" width="321" height="36" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.4" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.4"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:BranchContainerShape" x="40" y="165" width="360" height="121" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.5" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.4" activityNode="#//@ruleflow/@flowControlList.5" valid="true" branchContainer="#//@ruleflow/@flowControlList.5">
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="15" y="10" width="319" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.5/@branchEdgeList.0" activityNode="#//@ruleflow/@flowControlList.5/@branches.0/@nextStep.0"/>
+      <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="15" y="50" width="321" height="36" inboundEdges="#//@ruleflowViewList.0/@flowShapeList.5/@branchEdgeList.1" activityNode="#//@ruleflow/@flowControlList.5/@branches.1/@nextStep.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.5/@flowShapeList.0" branch="#//@ruleflow/@flowControlList.5/@branches.0"/>
+      <branchEdgeList targetShape="#//@ruleflowViewList.0/@flowShapeList.5/@flowShapeList.1" branch="#//@ruleflow/@flowControlList.5/@branches.1"/>
+    </flowShapeList>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="72" y="416" width="313" height="36" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" activityNode="#//@ruleflow/@flowControlList.6"/>
     <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.0" targetShape="#//@ruleflowViewList.0/@flowShapeList.1"/>
-    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.1" targetShape="#//@ruleflowViewList.0/@flowShapeList.2"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.1" targetShape="#//@ruleflowViewList.0/@flowShapeList.4"/>
     <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.2" targetShape="#//@ruleflowViewList.0/@flowShapeList.3"/>
-    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.3" targetShape="#//@ruleflowViewList.0/@flowShapeList.4"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.3" targetShape="#//@ruleflowViewList.0/@flowShapeList.6"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.4" targetShape="#//@ruleflowViewList.0/@flowShapeList.5"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.5" targetShape="#//@ruleflowViewList.0/@flowShapeList.2"/>
   </ruleflowViewList>
 </com.corticon.rulesemf.assetmodel:RuleflowAsset>

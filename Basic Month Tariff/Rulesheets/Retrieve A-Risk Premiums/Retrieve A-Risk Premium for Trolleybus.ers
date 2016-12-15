@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_7Pp0QWlsEeapXdVOEygTbQ" externalChecksum="1229514692:201531363:1972018159">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="5" majorServiceNumber="2" buildNumber="6096" updateStamp="_Dr4vI4VYEea8PrfP1C8gLA" externalChecksum="1229514692:507989954:1972018159">
   <languageCode>en_GB</languageCode>
-  <ruleset vocabularyUpdateStamp="_1McG4GlnEeapXdVOEygTbQ" vocabulary="../../../Vocabularies/SeesamPOC.ecore#/">
+  <ruleset vocabularyUpdateStamp="_zi3AcH3gEeaS1KS4E03n7g" vocabulary="../../../Vocabularies/SeesamPOC.ecore#/">
     <rule/>
     <rule>
       <condition>
@@ -29,8 +29,8 @@
         <viewExpressions lhs="General.vehicleSeats" rhs="10..17"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.aRiskTariffMultiplier = 67.4813">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 67.4813" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 70.1806">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 70.1806" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -829,8 +829,8 @@
         <viewExpressions lhs="General.vehicleSeats" rhs="18..39"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.aRiskTariffMultiplier = 119.6535">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 119.6535" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 124.4396">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 124.4396" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -1629,8 +1629,8 @@
         <viewExpressions lhs="General.vehicleSeats" rhs="40..59"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.aRiskTariffMultiplier = 128.248">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 128.248" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 133.3779">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 133.3779" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -2429,8 +2429,8 @@
         <viewExpressions lhs="General.vehicleSeats" rhs="60..69"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.aRiskTariffMultiplier = 135.634">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 135.634" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 141.0594">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 141.0594" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -3229,8 +3229,8 @@
         <viewExpressions lhs="General.vehicleSeats" rhs="70..99"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.aRiskTariffMultiplier = 150.339">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 150.339" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 156.3526">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 156.3526" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -4029,8 +4029,8 @@
         <viewExpressions lhs="General.vehicleSeats" rhs=">= 100"/>
       </condition>
       <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
-        <opaqueExpression expression="General.aRiskTariffMultiplier = 172.4299">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 172.4299" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="General.aRiskTariffMultiplier = 179.3271">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="General.aRiskTariffMultiplier = 179.3271" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="aRiskTariffMultiplier" datatype="Decimal" termtype="ATTRIBUTE" fulltext="General.aRiskTariffMultiplier">
                 <parentTerm text="General" datatype="ttGeneralMtplBrms" termtype="ENTITY" fulltext="General"/>
@@ -4906,12 +4906,12 @@
         </expressionCell>
       </conditionItemList>
     </conditionSection>
-    <ruleSection columnCount="121">
+    <ruleSection columnCount="121" scrollColumnLeft="99">
       <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
       <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
         <conditionValueSetCellList valueSet="784"/>
         <conditionValueSetCellList valueSet="10..17"/>
-        <actionValueSetCellList valueSet="67.4813"/>
+        <actionValueSetCellList valueSet="70.1806"/>
       </ruleColumnList>
       <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
         <conditionValueSetCellList valueSet="795"/>
@@ -5011,7 +5011,7 @@
       <ruleColumnList ruleId="21" columnWidth="100" pRule="#//@ruleset/@rules.21">
         <conditionValueSetCellList valueSet="784"/>
         <conditionValueSetCellList valueSet="18..39"/>
-        <actionValueSetCellList valueSet="119.6535"/>
+        <actionValueSetCellList valueSet="124.4396"/>
       </ruleColumnList>
       <ruleColumnList ruleId="22" columnWidth="100" pRule="#//@ruleset/@rules.22">
         <conditionValueSetCellList valueSet="795"/>
@@ -5111,7 +5111,7 @@
       <ruleColumnList ruleId="41" columnWidth="100" pRule="#//@ruleset/@rules.41">
         <conditionValueSetCellList valueSet="784"/>
         <conditionValueSetCellList valueSet="40..59"/>
-        <actionValueSetCellList valueSet="128.248"/>
+        <actionValueSetCellList valueSet="133.3779"/>
       </ruleColumnList>
       <ruleColumnList ruleId="42" columnWidth="100" pRule="#//@ruleset/@rules.42">
         <conditionValueSetCellList valueSet="795"/>
@@ -5211,7 +5211,7 @@
       <ruleColumnList ruleId="61" columnWidth="100" pRule="#//@ruleset/@rules.61">
         <conditionValueSetCellList valueSet="784"/>
         <conditionValueSetCellList valueSet="60..69"/>
-        <actionValueSetCellList valueSet="135.634"/>
+        <actionValueSetCellList valueSet="141.0594"/>
       </ruleColumnList>
       <ruleColumnList ruleId="62" columnWidth="100" pRule="#//@ruleset/@rules.62">
         <conditionValueSetCellList valueSet="795"/>
@@ -5311,7 +5311,7 @@
       <ruleColumnList ruleId="81" columnWidth="100" pRule="#//@ruleset/@rules.81">
         <conditionValueSetCellList valueSet="784"/>
         <conditionValueSetCellList valueSet="70..99"/>
-        <actionValueSetCellList valueSet="150.339"/>
+        <actionValueSetCellList valueSet="156.3526"/>
       </ruleColumnList>
       <ruleColumnList ruleId="82" columnWidth="100" pRule="#//@ruleset/@rules.82">
         <conditionValueSetCellList valueSet="795"/>
@@ -5411,7 +5411,7 @@
       <ruleColumnList ruleId="101" columnWidth="100" pRule="#//@ruleset/@rules.101">
         <conditionValueSetCellList valueSet="784"/>
         <conditionValueSetCellList valueSet=">= 100"/>
-        <actionValueSetCellList valueSet="172.4299"/>
+        <actionValueSetCellList valueSet="179.3271"/>
       </ruleColumnList>
       <ruleColumnList ruleId="102" columnWidth="100" pRule="#//@ruleset/@rules.102">
         <conditionValueSetCellList valueSet="795"/>
